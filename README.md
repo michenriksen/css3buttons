@@ -2,7 +2,7 @@
 
 ## What is this? ##
 
-[CSS3 buttons](http://css3buttons.michaelhenriksen.dk) is a simple *framework* to create good-looking GitHub style button links.
+[CSS3 buttons](http://css3buttons.michaelhenriksen.dk) is a simple *framework* for creating good-looking GitHub style button links.
 
 ## Buttons ##
 
@@ -24,7 +24,7 @@ a `.primary` class to the button
 
 If you have a button that triggers a negative action, like deleting data, it's good practice to warn the user 
 by styling the button differently than the normal buttons. Give a button the class `.negative` and the 
-hover-state will change from blue to red
+hover-state will change to red
 
     <a href="#" class="negative button">Divide by Zero</a>
 
@@ -47,29 +47,40 @@ You can also add the pill class to grouped buttons if preferred:
 
 CSS3 Buttons supports a wide range of icons that can easily be added to any button by adding a span tag inside the anchor 
 tag with the class of `.icon` and any one of the provided icon classes:
-
+)
     <a href="#" class="button"><span class="magnifier icon"></span>Search</a>
 
 Here is a list of all the supported icon classes:
 
+ * `.book`
  * `.calendar`
  * `.chat`
  * `.check`
+ * `.clock`
  * `.cog`
  * `.comment`
  * `.cross`
+ * `.downarrow`
+ * `.fork`
  * `.heart`
  * `.home`
  * `.key`
+ * `.leftarrow`
+ * `.lock`
  * `.loop`
  * `.magnifier`
  * `.mail`
+ * `.move`
  * `.pen`
+ * `.pin`
  * `.plus`
  * `.reload`
+ * `.rightarrow`
  * `.rss`
  * `.tag`
  * `.trash`
+ * `.unlock`
+ * `.uparrow`
  * `.user`
 
 ## Big buttons ##
@@ -82,7 +93,7 @@ If you wish to emphasize a specific action you can add the `.big` class to make 
 
 CSS3 Buttons works in all major browsers
 
-**Note:** Some CSS3 features used in CSS3 Buttons is not supported in Internet Explorer browsers!
+**Note:** Some CSS3 features used in CSS3 Buttons is not supported in Internet Explorer browsers! (IE 8 and under)
 
 ## Installation ##
 
