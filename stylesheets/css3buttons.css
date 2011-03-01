@@ -1,4 +1,12 @@
-a.button { 
+/* ------------------------------------------
+CSS3 BUTTONS (GITHUB STYLE)
+Licensed under Unlicense 
+------------------------------------------ */
+
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON */
+
+.button { 
     position: relative; 
     overflow: visible; 
     display: inline-block; 
@@ -11,20 +19,21 @@ a.button {
     white-space: nowrap; 
     cursor: pointer; 
     outline: none; 
-    background-color: #ececec;
-    background-image: -webkit-gradient(
+    background: -webkit-gradient(
         linear, 0 0, 0 100%,
         from(#f4f4f4),
         to(#ececec)
     );
-    background-image: -moz-linear-gradient(
+    background: -moz-linear-gradient(
         #f4f4f4,
         #ececec
     );
-    background-image: linear-gradient(
+    background: linear-gradient(
         #f4f4f4,
         #ececec
-    );
+    );    
+    background-color: #fff;
+
     -webkit-border-radius: 0.2em; 
     -moz-border-radius: 0.2em; 
     border-radius: 0.2em; 
@@ -37,68 +46,235 @@ a.button {
     *display: inline; 
 }
 
-a.button.primary {
-    font-weight: bold;
-}
-
-a.button:hover,
-a.button:focus,
-a.button:active {
+.button:hover,
+.button:focus,
+.button:active {
     border-color: #3072b3;
     border-bottom-color: #2a65a0;
     
     text-decoration: none; 
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
     color: #fff; 
-    background-color: #3072b3;
-    background-image: -webkit-gradient(
+    background: -webkit-gradient(
         linear, 0 0, 0 100%,
         from(#599bdc),
         to(#3072b3)
     );
-    background-image: -moz-linear-gradient(
+    background: -moz-linear-gradient(
         #599bdc,
         #3072b3
     );
-    background-image: linear-gradient(
+    background: linear-gradient(
         #599bdc,
         #3072b3
     );
+    background-color: #3072b3;
 }
 
-a.button:active,
-a.button.active {
+.button:active,
+.button.active {
     border-color:#2a65a0;
     border-bottom-color:#3884CF;
     color: #fff; 
-    background-color: #3072b3;
-    background-image: -webkit-gradient(
+    background: -webkit-gradient(
         linear, 0 0, 0 100%,
         from(#3072b3),
         to(#599bdc)
     );
-    background-image: -moz-linear-gradient(
+    background: -moz-linear-gradient(
         #3072b3,
         #599bdc
     );
-    background-image: linear-gradient(
+    background: linear-gradient(
         #3072b3,
         #599bdc
     );
+    background-color: #3072b3;
 }
 
-/* Danger style */
+/* ............................................................................................................. Icons */
 
-a.button.danger {
+.button.icon:before {
+    content: "";
+    position: relative; 
+    top: 1px; 
+    display:inline-block;
+    width: 14px; 
+    height: 12px; 
+    margin: 0 0.5em 0 -0.25em; 
+    background: url(../images/css3buttons_icons.png) no-repeat;
+}
+
+.button.book.icon:before { background-position: 0 0; }
+.button.book.icon:hover:before,
+.button.book.icon:focus:before,
+.button.book.icon:active:before { background-position: 0 -15px; }
+
+.button.calendar.icon:before { background-position: 0 -30px; }
+.button.calendar.icon:hover:before,
+.button.calendar.icon:focus:before,
+.button.calendar.icon:active:before { background-position: 0 -45px; }
+
+.button.chat.icon:before { background-position: 0 -60px; }
+.button.chat.icon:hover:before,
+.button.chat.icon:focus:before,
+.button.chat.icon:active:before { background-position: 0 -75px; }
+
+.button.check.icon:before { background-position: 0 -90px; }
+.button.check.icon:hover:before,
+.button.check.icon:focus:before,
+.button.check.icon:active:before { background-position: 0 -103px; }
+
+.button.clock.icon:before { background-position: 0 -116px; }
+.button.clock.icon:hover:before,
+.button.clock.icon:focus:before,
+.button.clock.icon:active:before { background-position: 0 -131px; }
+
+.button.cog.icon:before { background-position: 0 -146px; }
+.button.cog.icon:hover:before,
+.button.cog.icon:focus:before,
+.button.cog.icon:active:before { background-position: 0 -161px; }
+
+.button.comment.icon:before { background-position: 0 -176px; }
+.button.comment.icon:hover:before,
+.button.comment.icon:focus:before,
+.button.comment.icon:active:before { background-position: 0 -190px; }
+
+.button.cross.icon:before { background-position: 0 -204px; }
+.button.cross.icon:hover:before,
+.button.cross.icon:focus:before,
+.button.cross.icon:active:before { background-position: 0 -219px; }
+
+.button.downarrow.icon:before { background-position: 0 -234px; }
+.button.downarrow.icon:hover:before,
+.button.downarrow.icon:focus:before,
+.button.downarrow.icon:active:before { background-position: 0 -249px; }
+
+.button.fork.icon:before { background-position: 0 -264px; }
+.button.fork.icon:hover:before,
+.button.fork.icon:focus:before,
+.button.fork.icon:active:before { background-position: 0 -279px; }
+
+.button.heart.icon:before { background-position: 0 -294px; }
+.button.heart.icon:hover:before,
+.button.heart.icon:focus:before,
+.button.heart.icon:active:before { background-position: 0 -308px; }
+
+.button.home.icon:before { background-position: 0 -322px; }
+.button.home.icon:hover:before,
+.button.home.icon:focus:before,
+.button.home.icon:active:before { background-position: 0 -337px; }
+
+.button.key.icon:before { background-position: 0 -352px; }
+.button.key.icon:hover:before,
+.button.key.icon:focus:before,
+.button.key.icon:active:before { background-position: 0 -367px; }
+
+.button.leftarrow.icon:before { background-position: 0 -382px; }
+.button.leftarrow.icon:hover:before,
+.button.leftarrow.icon:focus:before,
+.button.leftarrow.icon:active:before { background-position: 0 -397px; }
+
+.button.lock.icon:before { background-position: 0 -412px; }
+.button.lock.icon:hover:before,
+.button.lock.icon:focus:before,
+.button.lock.icon:active:before { background-position: 0 -427px; }
+
+.button.loop.icon:before { background-position: 0 -442px; }
+.button.loop.icon:hover:before,
+.button.loop.icon:focus:before,
+.button.loop.icon:active:before { background-position: 0 -457px; }
+
+.button.magnifier.icon:before { background-position: 0 -472px; }
+.button.magnifier.icon:hover:before,
+.button.magnifier.icon:focus:before,
+.button.magnifier.icon:active:before { background-position: 0 -487px; }
+
+.button.mail.icon:before { background-position: 0 -502px; }
+.button.mail.icon:hover:before,
+.button.mail.icon:focus:before,
+.button.mail.icon:active:before { background-position: 0 -514px; }
+
+.button.move.icon:before { background-position: 0 -526px; }
+.button.move.icon:hover:before,
+.button.move.icon:focus:before,
+.button.move.icon:active:before { background-position: 0 -541px; }
+
+.button.pen.icon:before { background-position: 0 -556px; }
+.button.pen.icon:hover:before,
+.button.pen.icon:focus:before,
+.button.pen.icon:active:before { background-position: 0 -571px; }
+
+.button.pin.icon:before { background-position: 0 -586px; }
+.button.pin.icon:hover:before,
+.button.pin.icon:focus:before,
+.button.pin.icon:active:before { background-position: 0 -601px; }
+
+.button.plus.icon:before { background-position: 0 -616px; }
+.button.plus.icon:hover:before,
+.button.plus.icon:focus:before,
+.button.plus.icon:active:before { background-position: 0 -631px; }
+
+.button.reload.icon:before { background-position: 0 -646px; }
+.button.reload.icon:hover:before,
+.button.reload.icon:focus:before,
+.button.reload.icon:active:before { background-position: 0 -660px; }
+
+.button.rightarrow.icon:before { background-position: 0 -674px; }
+.button.rightarrow.icon:hover:before,
+.button.rightarrow.icon:focus:before,
+.button.rightarrow.icon:active:before { background-position: 0 -689px; }
+
+.button.rss.icon:before { background-position: 0 -704px; }
+.button.rss.icon:hover:before,
+.button.rss.icon:focus:before,
+.button.rss.icon:active:before { background-position: 0 -719px; }
+
+.button.tag.icon:before { background-position: 0 -734px; }
+.button.tag.icon:hover:before,
+.button.tag.icon:focus:before,
+.button.tag.icon:active:before { background-position: 0 -749px; }
+
+.button.trash.icon:before { background-position: 0 -764px; }
+.button.trash.icon:hover:before,
+.button.trash.icon:focus:before,
+.button.trash.icon:active:before { background-position: 0 -779px; }
+
+.button.unlock.icon:before { background-position: 0 -794px; }
+.button.unlock.icon:hover:before,
+.button.unlock.icon:focus:before,
+.button.unlock.icon:active:before { background-position: 0 -809px; }
+
+.button.uparrow.icon:before { background-position: 0 -824px; }
+.button.uparrow.icon:hover:before,
+.button.uparrow.icon:focus:before,
+.button.uparrow.icon:active:before { background-position: 0 -839px; }
+
+.button.user.icon:before { background-position: 0 -854px; }
+.button.user.icon:hover:before,
+.button.user.icon:focus:before,
+.button.user.icon:active:before { background-position: 0 -869px; }
+
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON EXTENSIONS */
+
+/* ............................................................................................................. Primary */
+
+.button.primary {
+    font-weight: bold;
+}
+
+/* ............................................................................................................. Danger */
+
+.button.danger {
     color:#900;
 }
 
-a.button.danger:hover,
-a.button.danger:focus {     
+.button.danger:hover,
+.button.danger:focus {     
     border-color: #b53f3a;
     border-bottom-color:#a0302a;
     color: #fff; 
-    background: #dc5f59;
     background: -webkit-gradient(
         linear, 0 0, 0 100%,
         from(#dc5f59),
@@ -112,13 +288,13 @@ a.button.danger:focus {
         #dc5f59,
         #b33630
     );
+    background-color: #dc5f59;
 }
 
-a.button.danger:active,
-a.button.danger.active {   
+.button.danger:active,
+.button.danger.active {   
     border-color: #a0302a;
     border-bottom-color: #bf4843;
-    background: #b33630;
     background: -webkit-gradient(linear, 0 0, 0 100%,
         from(#b33630),
         to(#dc5f59)
@@ -131,216 +307,93 @@ a.button.danger.active {
         #b33630,
         #dc5f59
     );
+    background-color: #b33630;
 }
 
-/* Pill style */
+/* ............................................................................................................. Pill */
 
-a.button.pill {
+.button.pill {
     -webkit-border-radius: 50em; 
     -moz-border-radius: 50em; 
     border-radius: 50em; 
 }
 
-/* Grouped style */
+/* ............................................................................................................. Big */
 
-a.button.left { 
-    margin-right: 0;
-    -webkit-border-bottom-right-radius: 0; 
-    -webkit-border-top-right-radius: 0; 
-    -moz-border-radius-bottomright: 0; 
-    -moz-border-radius-topright: 0; 
-    border-bottom-right-radius: 0; 
-    border-top-right-radius: 0; 
+.button.big { 
+    font-size: 16px; 
 }
 
-a.button.middle { 
-    border-right: 0; 
-    border-left: 0; 
-    margin-right: 0; 
+.button.big.icon:before { top: 0; }
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON GROUPS */
+
+/* ............................................................................................................. Standard */
+
+.button-group {
+    display:inline-block;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.button-group + .button-group {
+    margin-left:15px;
+}
+
+.button-group li {
+    padding:0;
+    margin:0;
+}
+
+.button-group li,
+.button-group > .button {
+    float:left;
+}
+
+.button-group li > .button,
+.button-group > .button {
+    margin-left: -1px; 
+}
+
+.button-group > .button:first-child,
+.button-group li:first-child > .button { 
     margin-left: 0; 
+    -webkit-border-top-right-radius: 0; 
+    -webkit-border-bottom-right-radius: 0; 
+    -moz-border-radius-topright: 0; 
+    -moz-border-radius-bottomright: 0; 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+}
+
+.button-group > .button:not(:first-child):not(:last-child),
+.button-group li:not(:first-child):not(:last-child) > .button { 
     -webkit-border-radius: 0; 
     -moz-border-radius: 0; 
     border-radius: 0; 
 }
 
-a.button.right { 
-    margin-left: 0; 
-    -webkit-border-bottom-left-radius: 0; 
+.button-group > .button:last-child,
+.button-group li:last-child > .button { 
     -webkit-border-top-left-radius: 0; 
-    -moz-border-radius-bottomleft: 0; 
+    -webkit-border-bottom-left-radius: 0; 
     -moz-border-radius-topleft: 0; 
+    -moz-border-radius-bottomleft: 0; 
     border-top-left-radius: 0; 
     border-bottom-left-radius: 0; 
 }
 
-/* Big style */
+/* ............................................................................................................. Minor */
 
-a.button.big { 
-    font-size: 16px; 
+.button-group.minor-group .button {
+    text-shadow:none;
+    background-image:none;
 }
 
-/* With icon */
-
-a.button.icon:before {
-    content: "";
-    position: relative; 
-    top: 1px; 
-    display:inline-block;
-    width: 14px; 
-    height: 12px; 
-    margin: 0 0.5em 0 -0.25em; 
-    background-image: url('../images/css3buttons_icons.png'); 
-    background-repeat: no-repeat; 
+.button-group.minor-group .button:hover,
+.button-group.minor-group .button:focus,
+.button-group.minor-group .button:active {
+    text-shadow:none;
+    background-image:none;
 }
-
-a.big.button.icon:before { top: 0; }
-
-a.button.book.icon:before { background-position: 0 0; }
-a.button.book.icon:hover:before,
-a.button.book.icon:focus:before,
-a.button.book.icon:active:before { background-position: 0 -15px; }
-
-a.button.calendar.icon:before { background-position: 0 -30px; }
-a.button.calendar.icon:hover:before,
-a.button.calendar.icon:focus:before,
-a.button.calendar.icon:active:before { background-position: 0 -45px; }
-
-a.button.chat.icon:before { background-position: 0 -60px; }
-a.button.chat.icon:hover:before,
-a.button.chat.icon:focus:before,
-a.button.chat.icon:active:before { background-position: 0 -75px; }
-
-a.button.check.icon:before { background-position: 0 -90px; }
-a.button.check.icon:hover:before,
-a.button.check.icon:focus:before,
-a.button.check.icon:active:before { background-position: 0 -103px; }
-
-a.button.clock.icon:before { background-position: 0 -116px; }
-a.button.clock.icon:hover:before,
-a.button.clock.icon:focus:before,
-a.button.clock.icon:active:before { background-position: 0 -131px; }
-
-a.button.cog.icon:before { background-position: 0 -146px; }
-a.button.cog.icon:hover:before,
-a.button.cog.icon:focus:before,
-a.button.cog.icon:active:before { background-position: 0 -161px; }
-
-a.button.comment.icon:before { background-position: 0 -176px; }
-a.button.comment.icon:hover:before,
-a.button.comment.icon:focus:before,
-a.button.comment.icon:active:before { background-position: 0 -190px; }
-
-a.button.cross.icon:before { background-position: 0 -204px; }
-a.button.cross.icon:hover:before,
-a.button.cross.icon:focus:before,
-a.button.cross.icon:active:before { background-position: 0 -219px; }
-
-a.button.downarrow.icon:before { background-position: 0 -234px; }
-a.button.downarrow.icon:hover:before,
-a.button.downarrow.icon:focus:before,
-a.button.downarrow.icon:active:before { background-position: 0 -249px; }
-
-a.button.fork.icon:before { background-position: 0 -264px; }
-a.button.fork.icon:hover:before,
-a.button.fork.icon:focus:before,
-a.button.fork.icon:active:before { background-position: 0 -279px; }
-
-a.button.heart.icon:before { background-position: 0 -294px; }
-a.button.heart.icon:hover:before,
-a.button.heart.icon:focus:before,
-a.button.heart.icon:active:before { background-position: 0 -308px; }
-
-a.button.home.icon:before { background-position: 0 -322px; }
-a.button.home.icon:hover:before,
-a.button.home.icon:focus:before,
-a.button.home.icon:active:before { background-position: 0 -337px; }
-
-a.button.key.icon:before { background-position: 0 -352px; }
-a.button.key.icon:hover:before,
-a.button.key.icon:focus:before,
-a.button.key.icon:active:before { background-position: 0 -367px; }
-
-a.button.leftarrow.icon:before { background-position: 0 -382px; }
-a.button.leftarrow.icon:hover:before,
-a.button.leftarrow.icon:focus:before,
-a.button.leftarrow.icon:active:before { background-position: 0 -397px; }
-
-a.button.lock.icon:before { background-position: 0 -412px; }
-a.button.lock.icon:hover:before,
-a.button.lock.icon:focus:before,
-a.button.lock.icon:active:before { background-position: 0 -427px; }
-
-a.button.loop.icon:before { background-position: 0 -442px; }
-a.button.loop.icon:hover:before,
-a.button.loop.icon:focus:before,
-a.button.loop.icon:active:before { background-position: 0 -457px; }
-
-a.button.magnifier.icon:before { background-position: 0 -472px; }
-a.button.magnifier.icon:hover:before,
-a.button.magnifier.icon:focus:before,
-a.button.magnifier.icon:active:before { background-position: 0 -487px; }
-
-a.button.mail.icon:before { background-position: 0 -502px; }
-a.button.mail.icon:hover:before,
-a.button.mail.icon:focus:before,
-a.button.mail.icon:active:before { background-position: 0 -514px; }
-
-a.button.move.icon:before { background-position: 0 -526px; }
-a.button.move.icon:hover:before,
-a.button.move.icon:focus:before,
-a.button.move.icon:active:before { background-position: 0 -541px; }
-
-a.button.pen.icon:before { background-position: 0 -556px; }
-a.button.pen.icon:hover:before,
-a.button.pen.icon:focus:before,
-a.button.pen.icon:active:before { background-position: 0 -571px; }
-
-a.button.pin.icon:before { background-position: 0 -586px; }
-a.button.pin.icon:hover:before,
-a.button.pin.icon:focus:before,
-a.button.pin.icon:active:before { background-position: 0 -601px; }
-
-a.button.plus.icon:before { background-position: 0 -616px; }
-a.button.plus.icon:hover:before,
-a.button.plus.icon:focus:before,
-a.button.plus.icon:active:before { background-position: 0 -631px; }
-
-a.button.reload.icon:before { background-position: 0 -646px; }
-a.button.reload.icon:hover:before,
-a.button.reload.icon:focus:before,
-a.button.reload.icon:active:before { background-position: 0 -660px; }
-
-a.button.rightarrow.icon:before { background-position: 0 -674px; }
-a.button.rightarrow.icon:hover:before,
-a.button.rightarrow.icon:focus:before,
-a.button.rightarrow.icon:active:before { background-position: 0 -689px; }
-
-a.button.rss.icon:before { background-position: 0 -704px; }
-a.button.rss.icon:hover:before,
-a.button.rss.icon:focus:before,
-a.button.rss.icon:active:before { background-position: 0 -719px; }
-
-a.button.tag.icon:before { background-position: 0 -734px; }
-a.button.tag.icon:hover:before,
-a.button.tag.icon:focus:before,
-a.button.tag.icon:active:before { background-position: 0 -749px; }
-
-a.button.trash.icon:before { background-position: 0 -764px; }
-a.button.trash.icon:hover:before,
-a.button.trash.icon:focus:before,
-a.button.trash.icon:active:before { background-position: 0 -779px; }
-
-a.button.unlock.icon:before { background-position: 0 -794px; }
-a.button.unlock.icon:hover:before,
-a.button.unlock.icon:focus:before,
-a.button.unlock.icon:active:before { background-position: 0 -809px; }
-
-a.button.uparrow.icon:before { background-position: 0 -824px; }
-a.button.uparrow.icon:hover:before,
-a.button.uparrow.icon:focus:before,
-a.button.uparrow.icon:active:before { background-position: 0 -839px; }
-
-a.button.user.icon:before { background-position: 0 -854px; }
-a.button.user.icon:hover:before,
-a.button.user.icon:focus:before,
-a.button.user.icon:active:before { background-position: 0 -869px; }
