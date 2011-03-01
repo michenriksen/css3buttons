@@ -284,6 +284,9 @@ Licensed under Unlicense
     margin: 0;
 }
 
+.button + .button,
+.button + .button-group,
+.button-group + .button,
 .button-group + .button-group {
     margin-left: 15px;
 }
@@ -303,6 +306,13 @@ Licensed under Unlicense
     margin-left: -1px; 
 }
 
+.button-group > .button:not(:first-child):not(:last-child),
+.button-group li:not(:first-child):not(:last-child) > .button { 
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0; 
+    border-radius: 0; 
+}
+
 .button-group > .button:first-child,
 .button-group li:first-child > .button { 
     margin-left: 0; 
@@ -312,13 +322,6 @@ Licensed under Unlicense
     -moz-border-radius-bottomright: 0; 
     border-top-right-radius: 0; 
     border-bottom-right-radius: 0; 
-}
-
-.button-group > .button:not(:first-child):not(:last-child),
-.button-group li:not(:first-child):not(:last-child) > .button { 
-    -webkit-border-radius: 0; 
-    -moz-border-radius: 0; 
-    border-radius: 0; 
 }
 
 .button-group > .button:last-child,
@@ -334,15 +337,25 @@ Licensed under Unlicense
 /* ............................................................................................................. Minor */
 
 .button-group.minor-group .button {
+    border: 1px solid #d4d4d4; 
     text-shadow: none;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#fff));
-    background-image: -moz-linear-gradient(#fff, #fff);
-    background-image: linear-gradient(#fff, #fff);
+    background: #fff;
 }
 
 .button-group.minor-group .button:hover,
 .button-group.minor-group .button:focus,
 .button-group.minor-group .button:active {
-    text-shadow: none;
-    background-image: none;
+    background: #599bdc;
+}
+
+.button-group.minor-group .button:active,
+.button-group.minor-group .button.active {
+    background: #3072b3;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON CONTAINER */
+/* For mixing buttons and button groups, e.g., in a navigation bar */
+
+.button-container .button {
+    vertical-align:top;
 }
