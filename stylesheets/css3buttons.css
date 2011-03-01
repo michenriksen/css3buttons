@@ -12,6 +12,7 @@ Licensed under Unlicense
     display: inline-block; 
     padding: 0.5em 1em; 
     border: 1px solid #d4d4d4; 
+    margin: 0;
     text-decoration: none; 
     text-shadow: 1px 1px 0 #fff; 
     font:11px/normal sans-serif; 
@@ -54,6 +55,11 @@ Licensed under Unlicense
     background: -moz-linear-gradient(#3072b3, #599bdc);
     background: linear-gradient(#3072b3, #599bdc);
     background-color: #3072b3;
+}
+
+/* overrides extra padding on button elements in Firefox */
+.button::-moz-focus-inner {
+	border: none;
 }
 
 /* ............................................................................................................. Icons */
@@ -292,29 +298,25 @@ Licensed under Unlicense
 }
 
 .button-group li {
+    float: left;
     padding: 0;
     margin: 0;
 }
 
-.button-group li,
-.button-group > .button {
+.button-group .button {
     float: left;
-}
-
-.button-group li > .button,
-.button-group > .button {
     margin-left: -1px; 
 }
 
 .button-group > .button:not(:first-child):not(:last-child),
-.button-group li:not(:first-child):not(:last-child) > .button { 
+.button-group li:not(:first-child):not(:last-child) .button { 
     -webkit-border-radius: 0; 
     -moz-border-radius: 0; 
     border-radius: 0; 
 }
 
 .button-group > .button:first-child,
-.button-group li:first-child > .button { 
+.button-group li:first-child .button { 
     margin-left: 0; 
     -webkit-border-top-right-radius: 0; 
     -webkit-border-bottom-right-radius: 0; 
