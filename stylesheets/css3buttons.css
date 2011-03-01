@@ -2,20 +2,19 @@ a.button {
     position: relative; 
     overflow: visible; 
     display: inline-block; 
-    padding: 3px 5px; 
+    padding: 0.5em 1em; 
     border: 1px solid #CACACA; 
     text-decoration: none; 
     text-shadow: 1px 1px 0 #fff; 
-    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; 
-    font-size: 12px; 
+    font:12px/normal 'lucida grande', tahoma, verdana, arial, sans-serif; 
     color: #3C3C3D; 
     background: #ECECEC url('../images/css3buttons_backgrounds.png') 0 0 no-repeat; 
     white-space: nowrap; 
     cursor: pointer; 
     outline: none; 
-    -webkit-border-radius: 2px; 
-    -moz-border-radius: 2px; 
-    border-radius: 2px; 
+    -webkit-border-radius: 0.2em; 
+    -moz-border-radius: 0.2em; 
+    border-radius: 0.2em; 
     -webkit-background-clip: padding-box; 
     -moz-background-clip: padding-box; 
     -o-background-clip: padding-box; 
@@ -72,10 +71,9 @@ a.button.negative.active {
 /* Pill style */
 
 a.button.pill {
-    padding: 2px 10px;
-    -webkit-border-radius: 19px; 
-    -moz-border-radius: 19px; 
-    border-radius: 19px; 
+    -webkit-border-radius: 50em; 
+    -moz-border-radius: 50em; 
+    border-radius: 50em; 
 }
 
 /* Grouped style */
@@ -119,8 +117,6 @@ a.button.right:active {
 /* Big style */
 
 a.button.big { 
-    padding-left: 17px; 
-    padding-right: 17px;
     font-size: 16px; 
 }
 
@@ -128,11 +124,11 @@ a.button.big {
 
 a.button .icon {
     position: relative; 
-    top: 2px; 
-    display: inline-block; 
+    top: 1px; 
+    display:inline-block;
     width: 14px; 
     height: 12px; 
-    margin: 0 7px 0 0; 
+    margin: 0 0.5em 0 -0.25em; 
     background-image: url('../images/css3buttons_icons.png'); 
     background-repeat: no-repeat; 
 }
