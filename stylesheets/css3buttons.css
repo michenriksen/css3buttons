@@ -14,33 +14,18 @@ Licensed under Unlicense
     border: 1px solid #d4d4d4; 
     text-decoration: none; 
     text-shadow: 1px 1px 0 #fff; 
-    font:12px/normal 'lucida grande', tahoma, verdana, arial, sans-serif; 
+    font:11px/normal sans-serif; 
     color: #333; 
     white-space: nowrap; 
     cursor: pointer; 
     outline: none; 
-    background: -webkit-gradient(
-        linear, 0 0, 0 100%,
-        from(#f4f4f4),
-        to(#ececec)
-    );
-    background: -moz-linear-gradient(
-        #f4f4f4,
-        #ececec
-    );
-    background: linear-gradient(
-        #f4f4f4,
-        #ececec
-    );    
-    background-color: #fff;
-
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background: -moz-linear-gradient(#f4f4f4, #ececec);
+    background: linear-gradient(#f4f4f4, #ececec);    
+    background-color: #ececec;
     -webkit-border-radius: 0.2em; 
     -moz-border-radius: 0.2em; 
     border-radius: 0.2em; 
-    -webkit-background-clip: padding-box; 
-    -moz-background-clip: padding-box; 
-    -o-background-clip: padding-box; 
-    background-clip: padding-box;
     /* IE hacks */
     zoom: 1; 
     *display: inline; 
@@ -51,44 +36,23 @@ Licensed under Unlicense
 .button:active {
     border-color: #3072b3;
     border-bottom-color: #2a65a0;
-    
     text-decoration: none; 
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
     color: #fff; 
-    background: -webkit-gradient(
-        linear, 0 0, 0 100%,
-        from(#599bdc),
-        to(#3072b3)
-    );
-    background: -moz-linear-gradient(
-        #599bdc,
-        #3072b3
-    );
-    background: linear-gradient(
-        #599bdc,
-        #3072b3
-    );
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+    background: -moz-linear-gradient(#599bdc, #3072b3);
+    background: linear-gradient(#599bdc, #3072b3);
     background-color: #3072b3;
 }
 
 .button:active,
 .button.active {
-    border-color:#2a65a0;
-    border-bottom-color:#3884CF;
+    border-color: #2a65a0;
+    border-bottom-color: #3884CF;
     color: #fff; 
-    background: -webkit-gradient(
-        linear, 0 0, 0 100%,
-        from(#3072b3),
-        to(#599bdc)
-    );
-    background: -moz-linear-gradient(
-        #3072b3,
-        #599bdc
-    );
-    background: linear-gradient(
-        #3072b3,
-        #599bdc
-    );
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+    background: -moz-linear-gradient(#3072b3, #599bdc);
+    background: linear-gradient(#3072b3, #599bdc);
     background-color: #3072b3;
 }
 
@@ -98,7 +62,7 @@ Licensed under Unlicense
     content: "";
     position: relative; 
     top: 1px; 
-    display:inline-block;
+    display: inline-block;
     width: 14px; 
     height: 12px; 
     margin: 0 0.5em 0 -0.25em; 
@@ -267,27 +231,18 @@ Licensed under Unlicense
 /* ............................................................................................................. Danger */
 
 .button.danger {
-    color:#900;
+    color: #900;
 }
 
 .button.danger:hover,
-.button.danger:focus {     
+.button.danger:focus,
+.button.danger:active {     
     border-color: #b53f3a;
-    border-bottom-color:#a0302a;
+    border-bottom-color: #a0302a;
     color: #fff; 
-    background: -webkit-gradient(
-        linear, 0 0, 0 100%,
-        from(#dc5f59),
-        to(#b33630)
-    );
-    background: -moz-linear-gradient(
-        #dc5f59,
-        #b33630
-    );
-    background: linear-gradient(
-        #dc5f59,
-        #b33630
-    );
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
+    background: -moz-linear-gradient(#dc5f59, #b33630);
+    background: linear-gradient(#dc5f59, #b33630);
     background-color: #dc5f59;
 }
 
@@ -295,18 +250,9 @@ Licensed under Unlicense
 .button.danger.active {   
     border-color: #a0302a;
     border-bottom-color: #bf4843;
-    background: -webkit-gradient(linear, 0 0, 0 100%,
-        from(#b33630),
-        to(#dc5f59)
-    );
-    background: -moz-linear-gradient(
-        #b33630,
-        #dc5f59
-    );
-    background: linear-gradient(
-        #b33630,
-        #dc5f59
-    );
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#b33630), to(#dc5f59));
+    background: -moz-linear-gradient(#b33630, #dc5f59);
+    background: linear-gradient(#b33630, #dc5f59);
     background-color: #b33630;
 }
 
@@ -320,35 +266,36 @@ Licensed under Unlicense
 
 /* ............................................................................................................. Big */
 
-.button.big { 
-    font-size: 16px; 
+.button.big {
+    font-size: 14px; 
 }
 
 .button.big.icon:before { top: 0; }
+
 
 /* ------------------------------------------------------------------------------------------------------------- BUTTON GROUPS */
 
 /* ............................................................................................................. Standard */
 
 .button-group {
-    display:inline-block;
-    list-style:none;
-    padding:0;
-    margin:0;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .button-group + .button-group {
-    margin-left:15px;
+    margin-left: 15px;
 }
 
 .button-group li {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 .button-group li,
 .button-group > .button {
-    float:left;
+    float: left;
 }
 
 .button-group li > .button,
@@ -387,13 +334,15 @@ Licensed under Unlicense
 /* ............................................................................................................. Minor */
 
 .button-group.minor-group .button {
-    text-shadow:none;
-    background-image:none;
+    text-shadow: none;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#fff));
+    background-image: -moz-linear-gradient(#fff, #fff);
+    background-image: linear-gradient(#fff, #fff);
 }
 
 .button-group.minor-group .button:hover,
 .button-group.minor-group .button:focus,
 .button-group.minor-group .button:active {
-    text-shadow:none;
-    background-image:none;
+    text-shadow: none;
+    background-image: none;
 }
