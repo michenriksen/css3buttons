@@ -20,10 +20,13 @@ Licensed under Unlicense
     white-space: nowrap; 
     cursor: pointer; 
     outline: none; 
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
-    background: -moz-linear-gradient(#f4f4f4, #ececec);
-    background: linear-gradient(#f4f4f4, #ececec);    
     background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
     -webkit-border-radius: 0.2em; 
     -moz-border-radius: 0.2em; 
     border-radius: 0.2em; 
@@ -40,10 +43,10 @@ Licensed under Unlicense
     text-decoration: none; 
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
     color: #fff; 
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
-    background: -moz-linear-gradient(#599bdc, #3072b3);
-    background: linear-gradient(#599bdc, #3072b3);
     background-color: #3072b3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+    background-image: -moz-linear-gradient(#599bdc, #3072b3);
+    background-image: linear-gradient(#599bdc, #3072b3);
 }
 
 .button:active,
@@ -51,10 +54,10 @@ Licensed under Unlicense
     border-color: #2a65a0;
     border-bottom-color: #3884CF;
     color: #fff; 
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
-    background: -moz-linear-gradient(#3072b3, #599bdc);
-    background: linear-gradient(#3072b3, #599bdc);
     background-color: #3072b3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+    background-image: -moz-linear-gradient(#3072b3, #599bdc);
+    background-image: linear-gradient(#3072b3, #599bdc);
 }
 
 /* overrides extra padding on button elements in Firefox */
@@ -246,20 +249,20 @@ Licensed under Unlicense
     border-color: #b53f3a;
     border-bottom-color: #a0302a;
     color: #fff; 
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
-    background: -moz-linear-gradient(#dc5f59, #b33630);
-    background: linear-gradient(#dc5f59, #b33630);
     background-color: #dc5f59;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
+    background-image: -moz-linear-gradient(#dc5f59, #b33630);
+    background-image: linear-gradient(#dc5f59, #b33630);
 }
 
 .button.danger:active,
 .button.danger.active {   
     border-color: #a0302a;
     border-bottom-color: #bf4843;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#b33630), to(#dc5f59));
-    background: -moz-linear-gradient(#b33630, #dc5f59);
-    background: linear-gradient(#b33630, #dc5f59);
     background-color: #b33630;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b33630), to(#dc5f59));
+    background-image: -moz-linear-gradient(#b33630, #dc5f59);
+    background-image: linear-gradient(#b33630, #dc5f59);
 }
 
 /* ............................................................................................................. Pill */
@@ -341,18 +344,19 @@ Licensed under Unlicense
 .button-group.minor-group .button {
     border: 1px solid #d4d4d4; 
     text-shadow: none;
-    background: #fff;
+    background-image: none;
+    background-color: #fff;
 }
 
 .button-group.minor-group .button:hover,
 .button-group.minor-group .button:focus,
 .button-group.minor-group .button:active {
-    background: #599bdc;
+    background-color: #599bdc;
 }
 
 .button-group.minor-group .button:active,
 .button-group.minor-group .button.active {
-    background: #3072b3;
+    background-color: #3072b3;
 }
 
 /* ------------------------------------------------------------------------------------------------------------- BUTTON CONTAINER */
