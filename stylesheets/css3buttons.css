@@ -1,6 +1,6 @@
-a.button, button { display: inline-block; padding: 6px 5px 5px 5px; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 12px; color: #3C3C3D; text-shadow: 1px 1px 0 #FFFFFF; background: #ECECEC url('../images/css3buttons_backgrounds.png') 0 0 no-repeat; white-space: nowrap; overflow: visible; cursor: pointer; text-decoration: none; border: 1px solid #CACACA; -webkit-border-radius: 2px; -moz-border-radius: 2px; -webkit-background-clip: padding-box; border-radius: 2px; outline: none; position: relative; zoom: 1; *display: inline; line-height: 1.41; }
-button {margin-left: 0; margin-right: 0;}
-button::-moz-focus-inner { border: 0; padding: 1px 0;}
+a.button, button { display: inline-block; padding: 6px 5px 5px 5px; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 12px; color: #3C3C3D; text-shadow: 1px 1px 0 #FFFFFF; background: #ECECEC url('../images/css3buttons_backgrounds.png') 0 0 no-repeat; white-space: nowrap; overflow: visible; cursor: pointer; text-decoration: none; border: 1px solid #CACACA; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; outline: none; position: relative; zoom: 1; line-height: 1.41; *display: inline; *vertical-align: middle; }
+button { margin-left: 0; margin-right: 0; *padding: 5px 5px 3px 5px; }
+button::-moz-focus-inner { border: 0; padding: 1px 0; }
 a.button.primary, button.primary { font-weight: bold }
 a.button:hover, button:hover { color: #FFFFFF; border-color: #388AD4; text-decoration: none; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); background-position: 0 -40px; background-color: #2D7DC5; }
 a.button:active, button:active,
@@ -9,7 +9,7 @@ a.button:active, button:active { top: 1px }
 a.button.negative:hover, button.negative:hover { color: #FFFFFF; background-position: 0 -121px; background-color: #D84743; border-color: #911D1B; }
 a.button.negative:active, button.negative:active,
 a.button.negative.active, button.negative.active { background-position: 0 -161px; background-color: #A5211E; border-color: #911D1B; }
-a.button.pill, button.pill { -webkit-border-radius: 19px; -moz-border-radius: 19px; border-radius: 19px; padding: 5px 10px 4px 10px; }
+a.button.pill, button.pill { -webkit-border-radius: 19px; -moz-border-radius: 19px; border-radius: 19px; padding: 5px 10px 4px 10px; *padding: 4px 10px; }
 a.button.left, button.left { -webkit-border-bottom-right-radius: 0px; -webkit-border-top-right-radius: 0px; -moz-border-radius-bottomright: 0px; -moz-border-radius-topright: 0px; border-bottom-right-radius: 0px; border-top-right-radius: 0px; margin-right: 0px; }
 a.button.middle, button.middle { margin-right: 0px; margin-left: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; border-right: none; border-left: none; }
 a.button.right, button.right { -webkit-border-bottom-left-radius: 0px; -webkit-border-top-left-radius: 0px; -moz-border-radius-bottomleft: 0px; -moz-border-radius-topleft: 0px; border-top-left-radius: 0px; border-bottom-left-radius: 0px; margin-left: 0px; }
@@ -17,7 +17,8 @@ a.button.left:active, button.left:active,
 a.button.middle:active, button.middle:active,
 a.button.right:active, button.right:active { top: 0px }
 a.button.big, button.big { font-size: 16px; padding-left: 17px; padding-right: 17px; }
-a.button span.icon, button span.icon { display: inline-block; width: 14px; height: 12px; margin: auto 7px auto auto; position: relative; top: 2px; background-image: url('../images/css3buttons_icons.png'); background-repeat: no-repeat; }
+button.big { *padding: 4px 17px 2px 17px; }
+a.button span.icon, button span.icon { display: inline-block; width: 14px; height: 12px; margin: auto 7px auto auto; position: relative; top: 2px; *top: 0px; background-image: url('../images/css3buttons_icons.png'); background-repeat: no-repeat; }
 a.big.button span.icon, button.big span.icon, { top: 0px }
 a.button span.icon.book, button span.icon.book { background-position: 0 0 }
 a.button:hover span.icon.book, button:hover span.icon.book { background-position: 0 -15px }
