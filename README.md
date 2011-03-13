@@ -1,129 +1,78 @@
-# CSS3 Buttons #
+# CSS3 Github Buttons #
 
-## What is this? ##
-
-[CSS3 buttons](http://css3buttons.michaelhenriksen.dk) is a simple *framework* for creating good-looking GitHub style button links.
+CSS3 Github Buttons helps you easily create GitHub-style buttons from links, buttons, and inputs.
 
 ## Buttons ##
 
-To create a button, the only thing you have to do is this:
+The "buttons" can be created by adding `class="button"` to any appropriate `<a>`, `<button>`, or `<input>` element. Add a further class of `pill` to create a button pill-like button. Add a further class of `primary` to emphasise more important actions.
 
-    <a href="#" class="button">This is a Button</a>
+    <a href="#" class="button">Post comment (link)</a>
+    <input class="button" type="submit" value="Post comment (input)">
+    <button class="button" type="submit">Post comment (button)</button>
 
-If you prefer a pill-like button with more rounded corners, you can add a `.pill` class to the button
+## Buttons with dangerous actions ##
 
-    <a href="#" class="pill button">This is a Pill Button</a>
+If you have a button that triggers a dangerous action, like deleting data, this can be indicated by adding the class `danger`.
 
-Sometimes when you have multiple buttons, it's a good thing to highlight the button with the primary action 
-in order to give the user a visual clue of what action to take if in doubt. This can be accomplished by adding 
-a `.primary` class to the button
-
-    <a href="#" class="primary button">Publish Post</a> or <a href="#" class="button">Save as Draft</a>
-
-## Buttons with negative actions ##
-
-If you have a button that triggers a negative action, like deleting data, it's good practice to warn the user 
-by styling the button differently than the normal buttons. Give a button the class `.negative` and the 
-hover-state will change to red
-
-    <a href="#" class="negative button">Divide by Zero</a>
-
-## Grouped buttons ##
-
-You can create grouped buttons that are linked together, like seen at Gmail and other places, 
-by using the `.left`, `.middle` and `.right` classes:
-
-    <a href="#" class="left primary button">Archive</a>
-    <a href="#" class="middle button">Report Spam</a>
-    <a href="#" class="right negative button">Delete</a>
-
-You can also add the pill class to grouped buttons if preferred:
-
-    <a href="#" class="left primary pill button">Archive</a>
-    <a href="#" class="middle pill button">Report Spam</a>
-    <a href="#" class="right negative pill button">Delete</a>
-
-## Buttons with icons ##
-
-CSS3 Buttons supports a wide range of icons that can easily be added to any button by adding a span tag inside the anchor 
-tag with the class of `.icon` and any one of the provided icon classes:
-)
-    <a href="#" class="button"><span class="magnifier icon"></span>Search</a>
-
-Here is a list of all the supported icon classes:
-
- * `.book`
- * `.calendar`
- * `.chat`
- * `.check`
- * `.clock`
- * `.cog`
- * `.comment`
- * `.cross`
- * `.downarrow`
- * `.fork`
- * `.heart`
- * `.home`
- * `.key`
- * `.leftarrow`
- * `.lock`
- * `.loop`
- * `.magnifier`
- * `.mail`
- * `.move`
- * `.pen`
- * `.pin`
- * `.plus`
- * `.reload`
- * `.rightarrow`
- * `.rss`
- * `.tag`
- * `.trash`
- * `.unlock`
- * `.uparrow`
- * `.user`
+    <a href="#" class="button danger">Delete post</a>
 
 ## Big buttons ##
 
-If you wish to emphasize a specific action you can add the `.big` class to make a more prominent *call-to-action* button:
+If you wish to emphasize a specific action you can add the class `big`.
 
-    <a href="#" class="big button">Create Project</a>
+    <a href="#" class="button big">Create Project</a>
+    
+## Grouped buttons ##
+
+Groups of buttons can be created by wrapping them in an element given a class of `button-group`. A less important group of buttons can be marked out by adding a further class, `minor-group`.
+    
+    <div class="button-group minor-group">
+        <a href="#" class="button primary">Dashboard</a>
+        <a href="#" class="button">Inbox</a>
+        <a href="#" class="button">Account</a>
+        <a href="#" class="button">Logout</a>
+    </div>
+
+## Mixed groups ##
+
+Displaying a mixture of grouped and standalone buttons, as might be seen in a toolbar, can be done by adding another wrapping element with the class `button-container`.
+
+    <div class="actions button-container">
+        <a href="#" class="button primary">Compose new</a>
+        
+        <div class="button-group">
+            <a href="#" class="button primary">Archive</a>
+            <a href="#" class="button">Report spam</a>
+            <a href="#" class="button danger">Delete</a>
+        </div>
+                            
+        <div class="button-group minor-group">
+            <a href="#" class="button">Move to</a>
+            <a href="#" class="button">Labels</a>
+        </div>
+    </div>
+
+## Buttons with icons ##
+
+A range of icons can be added (only for links and buttons) by adding a class of `icon` and any one of the provided icon classes.
+
+    <a href="#" class="button icon search">Search</a>
 
 ## Browser compatibility ##
 
-CSS3 Buttons works in all major browsers
-
-**Note:** Some CSS3 features used in CSS3 Buttons is not supported in Internet Explorer browsers! (IE 8 and under)
+Firefox 3.5+, Google Chrome, Safari 4+, IE 8+, Opera 10+.
+Note: Some CSS3 features are not supported in older versions of Opera and versions of Internet Explorer prior to IE 8. The use of icons is not supported in IE 6 or IE 7.
 
 ## Installation ##
 
- 1. Drop `css3buttons.css` in your stylesheets folder
- 2. Drop `css3buttons_backgrounds.png` and `css3buttons_icons.png` in your images folder
- 3. Link to `css3buttons.css` in the head section of your HTML page
+ 1. Add `css3-github-buttons.css` in your stylesheets folder
+ 2. Add `css3-github-buttons-icons.png` in your images folder
+ 3. Link to `css3-github-buttons.css` in the head of your HTML document
 
 ## License ##
 
-### The [Unlicense](http://unlicense.org): ###
+Public domain: [http://unlicense.org](http://unlicense.org)
 
-This is free and unencumbered software released into the public domain.
+## Acknowledgements ##
 
-Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
-
-In jurisdictions that recognize copyright laws, the author or authors of this software dedicate any and all copyright interest in the software to the public domain. We make this dedication for the benefit of the public at large and to the detriment of our heirs and successors. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this software under copyright law.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-For more information, please refer to <http://unlicense.org/>
-
-## Shout-Outs ##
-
- * Thanks to [GitHub](http://github.com) and [David Walsh](http://davidwalsh.name/github-css) for inspiration!
- * Icons used in CSS3 Buttons are from the excellent [Iconic pack](http://somerandomdude.com/projects/iconic/) by [some random dude](http://somerandomdude.com/)!
-
-## Contact ##
-
-### Found a Bug? ###
-Please create a [ticket on GitHub](https://github.com/michenriksen/css3buttons/issues) With a description of the problem, browser and operating system information and how to reproduce the problem.
-
-### Need Help? ###
-You can send me a private message on [GitHub](http://github.com/michenriksen/) and I'll do my best to help you.
+Inspired by [Michael Henriksen](http://michaelhenriksen.dk)'s [CSS3 Buttons](http://github.com/michenriksen/css3buttons). Icons from [Iconic pack](http://somerandomdude.com/projects/iconic/).
