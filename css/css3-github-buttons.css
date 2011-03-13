@@ -1,5 +1,5 @@
 /* ------------------------------------------
-CSS3 BUTTONS (GITHUB STYLE)
+CSS3 GITHUB BUTTONS
 Licensed under Unlicense 
 ------------------------------------------ */
 
@@ -71,17 +71,37 @@ Licensed under Unlicense
     content: "";
     position: relative; 
     top: 1px; 
-    display: inline-block;
+    float:left;
     width: 14px; 
     height: 12px; 
     margin: 0 0.5em 0 -0.25em; 
-    background: url(../images/css3buttons_icons.png) no-repeat;
+    background: url(../images/css3-github-buttons-icons.png) 0 99px no-repeat;
 }
 
-.button.book.icon:before { background-position: 0 0; }
-.button.book.icon:hover:before,
-.button.book.icon:focus:before,
-.button.book.icon:active:before { background-position: 0 -15px; }
+.button.arrowup.icon:before { background-position: 0 -824px; }
+.button.arrowup.icon:hover:before,
+.button.arrowup.icon:focus:before,
+.button.arrowup.icon:active:before { background-position: 0 -839px; }
+
+.button.arrowdown.icon:before { background-position: 0 -234px; }
+.button.arrowdown.icon:hover:before,
+.button.arrowdown.icon:focus:before,
+.button.arrowdown.icon:active:before { background-position: 0 -249px; }
+
+.button.arrowright.icon:before { float:right; margin: 0 -0.25em 0 0.5em; background-position: 0 -674px; }
+.button.arrowright.icon:hover:before,
+.button.arrowright.icon:focus:before,
+.button.arrowright.icon:active:before { background-position: 0 -689px; }
+
+.button.arrowleft.icon:before { background-position: 0 -382px; }
+.button.arrowleft.icon:hover:before,
+.button.arrowleft.icon:focus:before,
+.button.arrowleft.icon:active:before { background-position: 0 -397px; }
+
+.button.log.icon:before { background-position: 0 0; }
+.button.log.icon:hover:before,
+.button.log.icon:focus:before,
+.button.log.icon:active:before { background-position: 0 -15px; }
 
 .button.calendar.icon:before { background-position: 0 -30px; }
 .button.calendar.icon:hover:before,
@@ -93,45 +113,40 @@ Licensed under Unlicense
 .button.chat.icon:focus:before,
 .button.chat.icon:active:before { background-position: 0 -75px; }
 
-.button.check.icon:before { background-position: 0 -90px; }
-.button.check.icon:hover:before,
-.button.check.icon:focus:before,
-.button.check.icon:active:before { background-position: 0 -103px; }
+.button.approve.icon:before { background-position: 0 -90px; }
+.button.approve.icon:hover:before,
+.button.approve.icon:focus:before,
+.button.approve.icon:active:before { background-position: 0 -103px; }
 
 .button.clock.icon:before { background-position: 0 -116px; }
 .button.clock.icon:hover:before,
 .button.clock.icon:focus:before,
 .button.clock.icon:active:before { background-position: 0 -131px; }
 
-.button.cog.icon:before { background-position: 0 -146px; }
-.button.cog.icon:hover:before,
-.button.cog.icon:focus:before,
-.button.cog.icon:active:before { background-position: 0 -161px; }
+.button.settings.icon:before { background-position: 0 -146px; }
+.button.settings.icon:hover:before,
+.button.settings.icon:focus:before,
+.button.settings.icon:active:before { background-position: 0 -161px; }
 
 .button.comment.icon:before { background-position: 0 -176px; }
 .button.comment.icon:hover:before,
 .button.comment.icon:focus:before,
 .button.comment.icon:active:before { background-position: 0 -190px; }
 
-.button.cross.icon:before { background-position: 0 -204px; }
-.button.cross.icon:hover:before,
-.button.cross.icon:focus:before,
-.button.cross.icon:active:before { background-position: 0 -219px; }
-
-.button.downarrow.icon:before { background-position: 0 -234px; }
-.button.downarrow.icon:hover:before,
-.button.downarrow.icon:focus:before,
-.button.downarrow.icon:active:before { background-position: 0 -249px; }
+.button.remove.icon:before { background-position: 0 -204px; }
+.button.remove.icon:hover:before,
+.button.remove.icon:focus:before,
+.button.remove.icon:active:before { background-position: 0 -219px; }
 
 .button.fork.icon:before { background-position: 0 -264px; }
 .button.fork.icon:hover:before,
 .button.fork.icon:focus:before,
 .button.fork.icon:active:before { background-position: 0 -279px; }
 
-.button.heart.icon:before { background-position: 0 -294px; }
-.button.heart.icon:hover:before,
-.button.heart.icon:focus:before,
-.button.heart.icon:active:before { background-position: 0 -308px; }
+.button.like.icon:before { background-position: 0 -294px; }
+.button.like.icon:hover:before,
+.button.like.icon:focus:before,
+.button.like.icon:active:before { background-position: 0 -308px; }
 
 .button.home.icon:before { background-position: 0 -322px; }
 .button.home.icon:hover:before,
@@ -143,11 +158,6 @@ Licensed under Unlicense
 .button.key.icon:focus:before,
 .button.key.icon:active:before { background-position: 0 -367px; }
 
-.button.leftarrow.icon:before { background-position: 0 -382px; }
-.button.leftarrow.icon:hover:before,
-.button.leftarrow.icon:focus:before,
-.button.leftarrow.icon:active:before { background-position: 0 -397px; }
-
 .button.lock.icon:before { background-position: 0 -412px; }
 .button.lock.icon:hover:before,
 .button.lock.icon:focus:before,
@@ -158,10 +168,10 @@ Licensed under Unlicense
 .button.loop.icon:focus:before,
 .button.loop.icon:active:before { background-position: 0 -457px; }
 
-.button.magnifier.icon:before { background-position: 0 -472px; }
-.button.magnifier.icon:hover:before,
-.button.magnifier.icon:focus:before,
-.button.magnifier.icon:active:before { background-position: 0 -487px; }
+.button.search.icon:before { background-position: 0 -472px; }
+.button.search.icon:hover:before,
+.button.search.icon:focus:before,
+.button.search.icon:active:before { background-position: 0 -487px; }
 
 .button.mail.icon:before { background-position: 0 -502px; }
 .button.mail.icon:hover:before,
@@ -173,30 +183,25 @@ Licensed under Unlicense
 .button.move.icon:focus:before,
 .button.move.icon:active:before { background-position: 0 -541px; }
 
-.button.pen.icon:before { background-position: 0 -556px; }
-.button.pen.icon:hover:before,
-.button.pen.icon:focus:before,
-.button.pen.icon:active:before { background-position: 0 -571px; }
+.button.edit.icon:before { background-position: 0 -556px; }
+.button.edit.icon:hover:before,
+.button.edit.icon:focus:before,
+.button.edit.icon:active:before { background-position: 0 -571px; }
 
 .button.pin.icon:before { background-position: 0 -586px; }
 .button.pin.icon:hover:before,
 .button.pin.icon:focus:before,
 .button.pin.icon:active:before { background-position: 0 -601px; }
 
-.button.plus.icon:before { background-position: 0 -616px; }
-.button.plus.icon:hover:before,
-.button.plus.icon:focus:before,
-.button.plus.icon:active:before { background-position: 0 -631px; }
+.button.add.icon:before { background-position: 0 -616px; }
+.button.add.icon:hover:before,
+.button.add.icon:focus:before,
+.button.add.icon:active:before { background-position: 0 -631px; }
 
 .button.reload.icon:before { background-position: 0 -646px; }
 .button.reload.icon:hover:before,
 .button.reload.icon:focus:before,
 .button.reload.icon:active:before { background-position: 0 -660px; }
-
-.button.rightarrow.icon:before { background-position: 0 -674px; }
-.button.rightarrow.icon:hover:before,
-.button.rightarrow.icon:focus:before,
-.button.rightarrow.icon:active:before { background-position: 0 -689px; }
 
 .button.rss.icon:before { background-position: 0 -704px; }
 .button.rss.icon:hover:before,
@@ -217,11 +222,6 @@ Licensed under Unlicense
 .button.unlock.icon:hover:before,
 .button.unlock.icon:focus:before,
 .button.unlock.icon:active:before { background-position: 0 -809px; }
-
-.button.uparrow.icon:before { background-position: 0 -824px; }
-.button.uparrow.icon:hover:before,
-.button.uparrow.icon:focus:before,
-.button.uparrow.icon:active:before { background-position: 0 -839px; }
 
 .button.user.icon:before { background-position: 0 -854px; }
 .button.user.icon:hover:before,
