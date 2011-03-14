@@ -1,6 +1,6 @@
-# CSS3 Github Buttons #
+# CSS3 GitHub Buttons #
 
-CSS3 Github Buttons helps you easily create GitHub-style buttons from links, buttons, and inputs.
+CSS3 GitHub Buttons helps you easily create GitHub-style buttons from links, buttons, and inputs.
 
 Example: [nicolasgallagher.com/lab/css3-github-buttons/](http://nicolasgallagher.com/lab/css3-github-buttons/)
 
