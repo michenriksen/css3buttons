@@ -2,6 +2,8 @@
 
 CSS3 Github Buttons helps you easily create GitHub-style buttons from links, buttons, and inputs.
 
+Example: [nicolasgallagher/lab/css3-github-buttons/](http://nicolasgallagher/lab/css3-github-buttons/)
+
 ## Buttons ##
 
 The "buttons" can be created by adding `class="button"` to any appropriate `<a>`, `<button>`, or `<input>` element. Add a further class of `pill` to create a button pill-like button. Add a further class of `primary` to emphasise more important actions.
