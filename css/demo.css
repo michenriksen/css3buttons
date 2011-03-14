@@ -61,10 +61,6 @@ ul, ol {
     margin: 20px 0; 
 }
 
-code { 
-    font-family: monospace, serif;
-}
-
 table { 
     border-collapse: separate; 
     border-spacing: 0; 
@@ -86,6 +82,7 @@ th, td {
 
 .container {
     position:relative; 
+    overflow:hidden;
     width: 600px; 
     padding: 40px 60px; 
     border: 1px solid #ccc; 

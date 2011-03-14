@@ -291,6 +291,9 @@ Licensed under Unlicense
     list-style: none;
     padding: 0;
     margin: 0;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
 }
 
 .button + .button,
