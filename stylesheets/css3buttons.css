@@ -16,6 +16,7 @@ a.button.middle:active,
 a.button.right:active { top: 0px }
 a.button.big { font-size: 16px; padding: 7px 16px; }
 a.button span.icon { display: inline-block; width: 14px; height: 12px; margin: auto 7px auto auto; position: relative; top: 1px; background-image: url('../images/css3buttons_icons.png'); background-repeat: no-repeat; }
+a.button span.icon.after { margin: auto auto auto 7px; }
 a.big.button span.icon { top: 0px }
 a.button span.icon.book { background-position: 0 0 }
 a.button:hover span.icon.book { background-position: 0 -15px }
