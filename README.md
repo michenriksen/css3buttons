@@ -32,6 +32,12 @@ hover-state will change to red
 
     <a href="#" class="negative button">Divide by Zero</a>
 
+## Buttons with positive actions ##
+
+If you have a button that triggers an action you want to encourage your users to do, you can give a button a `.positive` class and the hover-state will change to green
+
+    <a href="#" class="positive button">Save the World</a>
+
 ## Grouped buttons ##
 
 You can create grouped buttons that are linked together, like seen at Gmail and other places, 
