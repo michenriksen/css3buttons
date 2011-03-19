@@ -10,6 +10,10 @@ To create a button, the only thing you have to do is this:
 
     <a href="#" class="button">This is a Button</a>
 
+You can also use the button tag:
+
+    <button class="button">This is a Button</button>
+
 If you prefer a pill-like button with more rounded corners, you can add a `.pill` class to the button
 
     <a href="#" class="pill button">This is a Pill Button</a>
