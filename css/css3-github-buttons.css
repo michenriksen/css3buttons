@@ -376,12 +376,6 @@ Licensed under Unlicense
     opacity: 0.8;
 }
 
-.button-group.minor-group .button.icon:hover:before,
-.button-group.minor-group .button.icon:focus:before,
-.button-group.minor-group .button.icon:active:before {
-    opacity: 1;
-}
-
 /* ------------------------------------------------------------------------------------------------------------- BUTTON CONTAINER */
 /* For mixing buttons and button groups, e.g., in a navigation bar */
 
