@@ -63,13 +63,8 @@ A range of icons can be added (only for links and buttons) by adding a class of 
 ## Browser compatibility ##
 
 Firefox 3.5+, Google Chrome, Safari 4+, IE 8+, Opera 10+.
+
 Note: Some CSS3 features are not supported in older versions of Opera and versions of Internet Explorer prior to IE 8. The use of icons is not supported in IE 6 or IE 7.
-
-## Installation ##
-
- 1. Add `css3-github-buttons.css` in your stylesheets folder
- 2. Add `css3-github-buttons-icons.png` in your images folder
- 3. Link to `css3-github-buttons.css` in the head of your HTML document
 
 ## License ##
 
