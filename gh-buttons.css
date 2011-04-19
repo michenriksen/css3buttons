@@ -67,7 +67,8 @@ http://github.com/necolas/css3-github-buttons
 
 /* overrides extra padding on button elements in Firefox */
 .button::-moz-focus-inner {
-	border: none;
+    padding: 0;
+    border: 0;
 }
 
 /* ............................................................................................................. Icons */
