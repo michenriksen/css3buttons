@@ -1,5 +1,6 @@
 a.button, button { display: inline-block; padding: 5px; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 12px; color: #3C3C3D; text-shadow: 1px 1px 0 #FFFFFF; background: #ECECEC url('../images/css3buttons_backgrounds.png') 0 0 no-repeat; white-space: nowrap; overflow: visible; cursor: pointer; text-decoration: none; border: 1px solid #CACACA; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; outline: none; position: relative; zoom: 1; line-height: 1.11; *display: inline; *vertical-align: middle; }
 button { margin-left: 0; margin-right: 0; *padding: 5px 5px 3px 5px; }
+a.button { -moz-user-select: none; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-user-select: none; -webkit-touch-callout: none;}
 button::-moz-focus-inner { border: 0; padding:0px; }
 a.button.primary, button.primary { font-weight: bold }
 a.button:focus, button:focus,
