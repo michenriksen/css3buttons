@@ -1,4 +1,4 @@
-a.button, button { display: inline-block; padding: 6px 5px 5px 5px; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 12px; color: #3C3C3D; text-shadow: 1px 1px 0 #FFFFFF; background: #ECECEC url('../images/css3buttons_backgrounds.png') 0 0 no-repeat; white-space: nowrap; overflow: visible; cursor: pointer; text-decoration: none; border: 1px solid #CACACA; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; outline: none; position: relative; zoom: 1; line-height: 1.11; *display: inline; *vertical-align: middle; }
+a.button, button { display: inline-block; padding: 5px 5px 5px 0; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 12px; color: #3C3C3D; text-shadow: 1px 1px 0 #FFFFFF; background: #ECECEC url('../images/css3buttons_backgrounds.png') 0 0 no-repeat; white-space: nowrap; overflow: visible; cursor: pointer; text-decoration: none; border: 1px solid #CACACA; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; outline: none; position: relative; zoom: 1; line-height: 1.11; *display: inline; *vertical-align: middle; }
 button { margin-left: 0; margin-right: 0; *padding: 5px 5px 3px 5px; }
 button::-moz-focus-inner { border: 0; padding:0px; }
 a.button.primary, button.primary { font-weight: bold }
@@ -22,9 +22,9 @@ a.button.right, button.right { -webkit-border-bottom-left-radius: 0px; -webkit-b
 a.button.left:active, button.left:active,
 a.button.middle:active, button.middle:active,
 a.button.right:active, button.right:active { top: 0px }
-a.button.big, button.big { font-size: 16px; padding-left: 17px; padding-right: 17px; }
+a.button.big, button.big { font-size: 16px; padding-left: 14px; padding-right: 17px; }
 button.big { *padding: 4px 17px 2px 17px; }
-a.button span.icon, button span.icon { display: inline-block; width: 14px; height: 12px; margin: auto 7px auto auto; position: relative; top: 2px; *top: 0px; background-image: url('../images/css3buttons_icons.png'); background-repeat: no-repeat; }
+a.button span.icon, button span.icon { display: inline-block; width: 14px; height: 12px; margin: auto 7px auto auto; position: relative; top: 0; *top: 0px; background-image: url('../images/css3buttons_icons.png'); background-repeat: no-repeat; }
 a.big.button span.icon, button.big span.icon, { top: 0px }
 a.button span.icon.book, button span.icon.book { background-position: 0 0 }
 a.button:hover span.icon.book, button:hover span.icon.book { background-position: 0 -15px }
