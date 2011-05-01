@@ -1,385 +1,407 @@
+
 <!doctype html> 
 <html lang="en"> 
 <head> 
 	<meta charset="utf-8"> 
-	<title>CSS3 Buttons | Simple CSS3 framework for creating button links</title> 
-	<meta name="description" content="Simple CSS3 framework for creating button links"> 
+	<title>CSS3 Buttons | Simple CSS3 framework for creating GitHub style button links</title> 
+	<meta name="description" content="CSS3 Buttons is a simple framework to create good-looking GitHub style button links."> 
 	<meta name="author" content="Michael Henriksen"> 
-	<link rel="stylesheet" href="stylesheets/reset.css" media="screen">
-	<link rel="stylesheet" href="stylesheets/demo.css" media="screen">
+	<link rel="stylesheet" href="stylesheets/reset.css" media="screen"> 
+	<link rel="stylesheet" href="stylesheets/demo.css" media="screen"> 
+	<link href='http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin' rel='stylesheet' type='text/css'> 
 	<link rel="stylesheet" href="stylesheets/css3buttons.css" media="screen"> 
+	<script type="text/javascript" src="javascripts/modernizr-1.6.min.js"></script> 
 </head> 
-<body>
-	<div class="container">
-		<header>
-			<h1 id="title">CSS3 Buttons</h1>
-		</header>
+<body> 
+	<div class="container"> 
+		<header> 
+			<h1 id="title">CSS3 Buttons</h1> 
+		</header> 
 		
-		<div id="main">
-			<section class="odd">
-				<h2>What is this?</h2>
+		<div id="main"> 
+			<section class="odd"> 
+				<h2>What is this?</h2> 
 			
-				<p>
-					<a href="http://github.com/michenriksen/css3buttons" title="Go to GitHub repository">CSS3 buttons</a> is a simple <em>framework</em>
-					for creating good-looking GitHub style button links. 	
-				</p>
-			</section>
+				<p> 
+					<strong>CSS3 Buttons</strong> is a simple <em>framework</em> for creating good-looking GitHub style button links. 	
+				</p> 
+				
+				<p> 
+					<strong>UPDATE 19th of Mar.</strong> Now you can also indicate a <em>positive</em> action by using the <code>.positive</code> class, which
+					will change the hover-state to green.
+				</p> 
+				
+				<p> 
+					<strong>UPDATE 19th of Mar.</strong> It is now possible to use <code>&lt;button&gt;</code> tags to easily submit forms.
+				</p> 
+				
+				<p> 
+					<strong>UPDATE 26th of Feb.</strong> The icon sprite has been optimized and additional icons has been added. Scroll down to
+					see what's new!
+				</p> 
+				
+				<ul> 
+					<li><a href="https://github.com/michenriksen/css3buttons/zipball/master">Download CSS3 Buttons as zip archive</a></li> 
+					<li><a href="https://github.com/michenriksen/css3buttons/tarball/master">Download CSS3 Buttons as tar.gz archive</a></li> 
+				</ul> 
+			</section> 
 		
-			<section class="even">
-				<h2>Buttons</h2>
+			<section class="even"> 
+				<h2>Buttons</h2> 
 			
-				<p>To create a button, the only thing you have to do is this:</p>
+				<p>To create a button, the only thing you have to do is this:</p> 
 			
-				<article class="example">
-					<h3>Code:</h3>
-					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"button"</span><span style='color:#ff8906; '>></span>This is a Button<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
-					</pre>
+				<article class="example"> 
+					<h3>Code:</h3> 
+					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"button"</span><span style='color:#ff8906; '>></span>This is a Button<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
+					</pre> 
 			
-					<h3>Result:</h3>
-					<div class="result">
-						<a href="javascript:void(false)" class="button">This is a Button</a>
-					</div>
-				</article>
-
-        <p>You can also use the button tag:</p>
-
-        <article class="example">
-          <h3>Code:</h3>
-          <pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"</span><span style='color:#00c4c4; '>button</span><span style='color:#00c4c4; '>"</span><span style='color:#ff8906; '>></span>This is a Button<span style='color:#fb8400; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#fb8400; '>></span>
-          </pre>
-
-          <h3>Result:</h3>
-          <div class="result">
-            <button class="button">This is a Button</button>
-          </div>
-        </article>
+					<h3>Result:</h3> 
+					<div class="result"> 
+						<a href="javascript:void(false)" class="button">This is a Button</a> 
+					</div> 
+				</article> 
 				
-				<p>If you prefer a pill-like button with more rounded corners, you can add a <code>.pill</code> class to the button</p>
+				<p>You can also use the button tag:</p> 
+ 
+				 <article class="example"> 
+				 	<h3>Code:</h3> 
+				    <pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"</span><span style='color:#00c4c4; '>button</span><span style='color:#00c4c4; '>"</span><span style='color:#ff8906; '>></span>This is a Button<span style='color:#fb8400; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#fb8400; '>></span> 
+				    </pre> 
+                        
+				    <h3>Result:</h3> 
+				    <div class="result"> 
+				    	<button class="button">This is a Button</button> 
+				    </div> 
+				 </article> 
 				
-				<article class="example">
-					<h3>Code:</h3>
-					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"pill button"</span><span style='color:#ff8906; '>></span>This is a Pill Button<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
-					</pre>
+				<p>If you prefer a pill-like button with more rounded corners, you can add a <code>.pill</code> class to the button</p> 
+				
+				<article class="example"> 
+					<h3>Code:</h3> 
+					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"pill button"</span><span style='color:#ff8906; '>></span>This is a Pill Button<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
+					</pre> 
 			
-					<h3>Result:</h3>
-					<div class="result">
-            <a href="javascript:void(false)" class="pill button">This is a Pill Button</a>
-					</div>
-				</article>
+					<h3>Result:</h3> 
+					<div class="result"> 
+						<a href="javascript:void(false)" class="pill button">This is a Pill Button</a> 
+					</div> 
+				</article> 
 				
-				<p>
+				<p> 
 					Sometimes when you have multiple buttons, it's considered good practice to highlight the button with the primary action in order to give
 					the user a visual clue of what action to take if in doubt. This can be accomplished by adding a <code>.primary</code> class 
 					to the button
-				</p>
+				</p> 
 				
-				<article class="example">
-					<h3>Code:</h3>
-					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"primary button"</span><span style='color:#ff8906; '>></span>Publish Post<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> or <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"button"</span><span style='color:#ff8906; '>></span>Save as Draft<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
-					</pre>
+				<article class="example"> 
+					<h3>Code:</h3> 
+					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"primary button"</span><span style='color:#ff8906; '>></span>Publish Post<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> or <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"button"</span><span style='color:#ff8906; '>></span>Save as Draft<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
+					</pre> 
 					
-					<h3>Result:</h3>
-					<div class="result">
-            <a href="javascript:void(false)" class="primary button">Publish Post</a> or <a href="javascript:void(false)" class="button">Save as Draft</a>
-         </div>
-				</article>
-			</section>
+					<h3>Result:</h3> 
+					<div class="result"> 
+						<a href="javascript:void(false)" class="primary button">Publish Post</a> or <a href="javascript:void(false)" class="button">Save as Draft</a> 
+					</div> 
+				</article> 
+			</section> 
 		
-			<section class="odd">
-				<h2>Buttons with negative actions</h2>
+			<section class="odd"> 
+				<h2>Buttons with negative actions</h2> 
 				
-				<p>
+				<p> 
 					If you have a button that triggers a <em>negative</em> action, like deleting data, it's good practice to warn the user by 
 					styling the button differently than the normal buttons. Give a button the class <code>.negative</code> and the hover-state
 					will change to red
-				</p>
+				</p> 
 				
-				<article class="example">
-					<h3>Code:</h3>
-					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"negative button"</span><span style='color:#ff8906; '>></span>Divide by Zero<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
-					</pre>
+				<article class="example"> 
+					<h3>Code:</h3> 
+					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"negative button"</span><span style='color:#ff8906; '>></span>Divide by Zero<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
+					</pre> 
 					
-					<h3>Result:</h3>
-					<div class="result">
-            <a href="javascript:alert('You son of a bitch!\n\nYou just divided by zero, didn\'t you?')" class="negative button">Divide by Zero</a>
-					</div>
-				</article>
-			</section>
-
-      <section class="even">
-        <h2>Buttons with positive actions</h2>
-
-        <p>
-          If you have a button that triggers an action you want to encourage your users to do, you can give a button a <code>.positive</code> class
-          and the hover-state will change to green
-        </p>
-
-        <article class="example">
-          <h3>Code:</h3>
-          <pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"</span><span style='color:#e66170; font-weight:bold; '>#</span><span style='color:#00c4c4; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"</span><span style='color:#00c4c4; '>positive button</span><span style='color:#00c4c4; '>"</span><span style='color:#ff8906; '>></span>Save the World<span style='color:#fb8400; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#fb8400; '>></span>
-          </pre>
-
-          <h3>Result:</h3>
-          <div class="result">
-            <a href="javascript:void(false)" class="positive button">Save the World</a>
-          </div>
-        </article>
-      </section>
+					<h3>Result:</h3> 
+					<div class="result"> 
+						<a href="javascript:alert('You son of a bitch!\n\nYou just divided by zero, didn\'t you?')" class="negative button">Divide by Zero</a> 
+					</div> 
+				</article> 
+					
+			</section> 
+			
+			<section class="even"> 
+				<h2>Buttons with positive actions</h2> 
+ 
+			    <p> 
+			    	If you have a button that triggers an action you want to encourage your users to do, you can give a button a <code>.positive</code> class
+			        and the hover-state will change to green
+			    </p> 
+ 
+			    <article class="example"> 
+			    	<h3>Code:</h3> 
+			        <pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"</span><span style='color:#e66170; font-weight:bold; '>#</span><span style='color:#00c4c4; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"</span><span style='color:#00c4c4; '>positive button</span><span style='color:#00c4c4; '>"</span><span style='color:#ff8906; '>></span>Save the World<span style='color:#fb8400; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#fb8400; '>></span> 
+			        </pre> 
+ 
+			        <h3>Result:</h3> 
+			        <div class="result"> 
+			        	<a href="javascript:void(false)" class="positive button">Save the World</a> 
+			        </div> 
+			     </article> 
+			</section> 
 		
-			<section class="odd">
-				<h2>Grouped buttons</h2>
+			<section class="odd"> 
+				<h2>Grouped buttons</h2> 
 				
-				<p>
+				<p> 
 					You can create grouped buttons that are linked together, like seen at <a href="http://www.gmail.com">Gmail</a> and other places, by using the <code>.left</code>, <code>.middle</code> and <code>.right</code> classes:
-				</p>
+				</p> 
 				
-				<article class="example">
-					<h3>Code:</h3>
-<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"left primary button"</span><span style='color:#ff8906; '>></span>Archive<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
-<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"middle button"</span><span style='color:#ff8906; '>></span>Report Spam<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
-<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"right negative button"</span><span style='color:#ff8906; '>></span>Delete<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
-</pre>
-
-					<h3>Result:</h3>
-          <a href="javascript:void(false)" class="left primary button">Archive</a><a href="javascript:void(false)" class="middle button">Report Spam</a><a href="javascript:void(false)" class="right negative button">Delete</a>
-				</article>
+				<article class="example"> 
+					<h3>Code:</h3> 
+<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"left primary button"</span><span style='color:#ff8906; '>></span>Archive<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"middle button"</span><span style='color:#ff8906; '>></span>Report Spam<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"right negative button"</span><span style='color:#ff8906; '>></span>Delete<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
+</pre> 
+ 
+					<h3>Result:</h3> 
+					<a href="javascript:void(false)" class="left primary button">Archive</a><a href="javascript:void(false)" class="middle button">Report Spam</a><a href="javascript:void(false)" class="right negative button">Delete</a> 
+				</article> 
 				
-				<p>
+				<p> 
 					You can also add the pill class to grouped buttons if preferred:
-				</p>
+				</p> 
 				
-				<article class="example">
-					<h3>Code:</h3>
-<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"left primary pill button"</span><span style='color:#ff8906; '>></span>Archive<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
-<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"middle pill button"</span><span style='color:#ff8906; '>></span>Report Spam<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
-<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"right negative pill button"</span><span style='color:#ff8906; '>></span>Delete<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
+				<article class="example"> 
+					<h3>Code:</h3> 
+<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"left primary pill button"</span><span style='color:#ff8906; '>></span>Archive<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"middle pill button"</span><span style='color:#ff8906; '>></span>Report Spam<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"right negative pill button"</span><span style='color:#ff8906; '>></span>Delete<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
 </pre>	
 		
-					<h3>Result:</h3>
-          <a href="javascript:void(false)" class="left primary pill button">Archive</a><a href="javascript:void(false)" class="middle pill button">Report Spam</a><a href="javascript:void(false)" class="right negative pill button">Delete</a>
-        </article>
-			</section>
+					<h3>Result:</h3> 
+					<a href="javascript:void(false)" class="left primary pill button">Archive</a><a href="javascript:void(false)" class="middle pill button">Report Spam</a><a href="javascript:void(false)" class="right negative pill button">Delete</a> 
+				</article> 
+			</section> 
 		
-			<section class="even">
-				<h2>Buttons with icons</h2>
+			<section class="even"> 
+				<h2>Buttons with icons</h2> 
 				
-				<p>
+				<p> 
 					CSS3 Buttons supports a wide range of icons that can easily be added to any button by adding a <code>span</code> tag inside the anchor tag
 					with the class of <code>.icon</code> and any one of the provided icon classes:
-				</p>
+				</p> 
 				
-				<article class="example">
-					<h3>Code:</h3>
-					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"button"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>span</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"magnifier icon"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>span</span><span style='color:#ff8906; '>></span>Search<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
-					</pre>
+				<article class="example"> 
+					<h3>Code:</h3> 
+					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"button"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>span</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"magnifier icon"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>span</span><span style='color:#ff8906; '>></span>Search<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
+					</pre> 
 					
-					<h3>Result:</h3>
-          <a href="javascript:void(false)" class="button"><span class="magnifier icon"></span>Search</a>
-        </article>
+					<h3>Result:</h3> 
+					<a href="javascript:void(false)" class="button"><span class="magnifier icon"></span>Search</a> 
+				</article> 
 				
-				<p>Here is a list of all the supported icon classes:</p>
+				<p>Here is a list of all the supported icon classes:</p> 
 				
-				<article class="example">
-					<table>
-						<thead>
-							<tr>
-								<th>Class</th>
-								<th>Example</th>
-							</tr>
-						</thead>
-            <tr>
-              <td><code>.book</code></td>
-              <td><a href="javascript:void(false)" class="button"><span class="book icon"></span>View Log</a></td>
-            </tr>
-						<tr>
-							<td><code>.calendar</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="calendar icon"></span>Add to Calendar</a></td>
-						</tr>
-						<tr>
-							<td><code>.chat</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="chat icon"></span>Start Chat</a></td>
-						</tr>
-						<tr>
-							<td><code>.check</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="check icon"></span>Approve Registration</a></td>
-						</tr>
-            <tr>
-              <td><code>.clock</code></td>
-              <td><a href="javascript:void(false)" class="button"><span class="clock icon"></span>Register Work Time</a></td>
-            </tr>
-						<tr>
-							<td><code>.cog</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="cog icon"></span>Settings</a></td>
-						</tr>
-						<tr>
-							<td><code>.comment</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="comment icon"></span>Add Comment</a></td>
-						</tr>
-						<tr>
-							<td><code>.cross</code></td>
-							<td><a href="javascript:void(false)" class="negative button"><span class="cross icon"></span>Remove Item</a></td>
-						</tr>
-            <tr>
-              <td><code>.downarrow</code></td>
-              <td><a href="javascript:void(false)" class="button"><span class="downarrow icon"></span>Move Down</a></td>
-            </tr>
-            <tr>
-              <td><code>.fork</code></td>
-              <td><a href="javascript:void(false)" class="button"><span class="fork icon"></span>Create Branch</a></td>
-            </tr>
-						<tr>
-							<td><code>.heart</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="heart icon"></span>Add to Favorites</a></td>
-						</tr>
-						<tr>
-							<td><code>.home</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="home icon"></span>Back to Frontpage</a></td>
-						</tr>
-						<tr>
-							<td><code>.key</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="key icon"></span>Password Protect</a></td>
-						</tr>
-            <tr>
-              <td><code>.leftarrow</code></td>
-              <td><a href="javascript:void(false)" class="button"><span class="leftarrow icon"></span>Move Left</a></td>
-            </tr>
-            <tr>
-              <td><code>.lock</code></td>
-              <td><a href="javascript:void(false)" class="button"><span class="lock icon"></span>Lock Article</a></td>
-            </tr>
-						<tr>
-							<td><code>.loop</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="loop icon"></span>Resend Message</a></td>
-						</tr>
-						<tr>
-							<td><code>.magnifier</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="magnifier icon"></span>Search</a></td>
-						</tr>
-						<tr>
-							<td><code>.mail</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="mail icon"></span>Send Newsletter</a></td>
-						</tr>
-            <tr>
-              <td><code>.move</code></td>
-              <td><a href="javascript:void(false)" class="button"><span class="move icon"></span>Move</a></td>
-            </tr>
-						<tr>
-							<td><code>.pen</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="pen icon"></span>Edit Post</a></td>
-						</tr>
-            <tr>
-              <td><code>.pin</code></td>
-              <td><a href="javascript:void(false)" class="button"><span class="pin icon"></span>Pin to Map</a></td>
-            </tr>
-						<tr>
-							<td><code>.plus</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="plus icon"></span>Add Post</a></td>
-						</tr>
-						<tr>
-							<td><code>.reload</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="reload icon"></span>Reload Page</a></td>
-						</tr>
-            <tr>
-              <td><code>.rightarrow</code></td>
-              <td><a href="javascript:void(false)" class="button"><span class="rightarrow icon"></span>Move Right</a></td>
-            </tr>
-						<tr>
-							<td><code>.rss</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="rss icon"></span>Subscribe to RSS Feed</a></td>
-						</tr>
-						<tr>
-							<td><code>.tag</code></td>
-							<td><a href="javascript:void(false)" class="button"><span class="tag icon"></span>Add Tag</a></td>
-						</tr>
-						<tr>
-							<td><code>.trash</code></td>
-							<td><a href="javascript:void(false)" class="negative button"><span class="trash icon"></span>Delete Post</a></td>
-						</tr>
-            <tr>
-              <td><code>.unlock</code></td>
-              <td><a href="javascript:void(false)" class="button"><span class="unlock icon"></span>Unlock Article</a></td>
-            </tr>
-            <tr>
-              <td><code>.uparrow</code></td>
-              <td><a href="javascript:void(false)" class="button"><span class="uparrow icon"></span>Move Up</a></td>
-            </tr>
-						<tr>
-							<td><code>.user</code></td>
-							<td><a href="javascript:void(false)" class="positive button"><span class="user icon"></span>Add New User</a></td>
-						</tr>
-					</table>
-				</article>
-			</section>
+				<article class="example"> 
+					<table> 
+						<thead> 
+							<tr> 
+								<th>Class</th> 
+								<th>Example</th> 
+							</tr> 
+						</thead> 
+						<tr> 
+			              <td><code>.book</code></td> 
+			              <td><a href="javascript:void(false)" class="button"><span class="book icon"></span>View Log</a></td> 
+			            </tr> 
+						<tr> 
+							<td><code>.calendar</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="calendar icon"></span>Add to Calendar</a></td> 
+						</tr> 
+						<tr> 
+							<td><code>.chat</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="chat icon"></span>Start Chat</a></td> 
+						</tr> 
+						<tr> 
+							<td><code>.check</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="check icon"></span>Approve Registration</a></td> 
+						</tr> 
+						<tr> 
+			              <td><code>.clock</code></td> 
+			              <td><a href="javascript:void(false)" class="button"><span class="clock icon"></span>Register Work Time</a></td> 
+			            </tr> 
+						<tr> 
+							<td><code>.cog</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="cog icon"></span>Settings</a></td> 
+						</tr> 
+						<tr> 
+							<td><code>.comment</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="comment icon"></span>Add Comment</a></td> 
+						</tr> 
+						<tr> 
+							<td><code>.cross</code></td> 
+							<td><a href="javascript:void(false)" class="negative button"><span class="cross icon"></span>Remove Item</a></td> 
+						</tr> 
+						<tr> 
+			              <td><code>.downarrow</code></td> 
+			              <td><a href="javascript:void(false)" class="button"><span class="downarrow icon"></span>Move Down</a></td> 
+			            </tr> 
+						<tr> 
+			              <td><code>.fork</code></td> 
+			              <td><a href="javascript:void(false)" class="button"><span class="fork icon"></span>Create Branch</a></td> 
+			            </tr> 
+						<tr> 
+							<td><code>.heart</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="heart icon"></span>Add to Favorites</a></td> 
+						</tr> 
+						<tr> 
+							<td><code>.home</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="home icon"></span>Back to Frontpage</a></td> 
+						</tr> 
+						<tr> 
+							<td><code>.key</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="key icon"></span>Password Protect</a></td> 
+						</tr> 
+						<tr> 
+			              <td><code>.leftarrow</code></td> 
+			              <td><a href="javascript:void(false)" class="button"><span class="leftarrow icon"></span>Move Left</a></td> 
+			            </tr> 
+			            <tr> 
+			              <td><code>.lock</code></td> 
+			              <td><a href="javascript:void(false)" class="button"><span class="lock icon"></span>Lock Article</a></td> 
+			            </tr> 
+						<tr> 
+							<td><code>.loop</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="loop icon"></span>Resend Message</a></td> 
+						</tr> 
+						<tr> 
+							<td><code>.magnifier</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="magnifier icon"></span>Search</a></td> 
+						</tr> 
+						<tr> 
+							<td><code>.mail</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="mail icon"></span>Send Newsletter</a></td> 
+						</tr> 
+						<tr> 
+			              <td><code>.move</code></td> 
+			              <td><a href="javascript:void(false)" class="button"><span class="move icon"></span>Move</a></td> 
+			            </tr> 
+						<tr> 
+							<td><code>.pen</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="pen icon"></span>Edit Post</a></td> 
+						</tr> 
+						<tr> 
+			              <td><code>.pin</code></td> 
+			              <td><a href="javascript:void(false)" class="button"><span class="pin icon"></span>Pin to Map</a></td> 
+			            </tr> 
+						<tr> 
+							<td><code>.plus</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="plus icon"></span>Add Post</a></td> 
+						</tr> 
+						<tr> 
+							<td><code>.reload</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="reload icon"></span>Reload Page</a></td> 
+						</tr> 
+						<tr> 
+			              <td><code>.rightarrow</code></td> 
+			              <td><a href="javascript:void(false)" class="button"><span class="rightarrow icon"></span>Move Right</a></td> 
+			            </tr> 
+						<tr> 
+							<td><code>.rss</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="rss icon"></span>Subscribe to RSS Feed</a></td> 
+						</tr> 
+						<tr> 
+							<td><code>.tag</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="tag icon"></span>Add Tag</a></td> 
+						</tr> 
+						<tr> 
+							<td><code>.trash</code></td> 
+							<td><a href="javascript:void(false)" class="negative button"><span class="trash icon"></span>Delete Post</a></td> 
+						</tr> 
+						<tr> 
+			              <td><code>.unlock</code></td> 
+			              <td><a href="javascript:void(false)" class="button"><span class="unlock icon"></span>Unlock Article</a></td> 
+			            </tr> 
+			            <tr> 
+			              <td><code>.uparrow</code></td> 
+			              <td><a href="javascript:void(false)" class="button"><span class="uparrow icon"></span>Move Up</a></td> 
+			            </tr> 
+						<tr> 
+							<td><code>.user</code></td> 
+							<td><a href="javascript:void(false)" class="button"><span class="user icon"></span>Add New User</a></td> 
+						</tr> 
+					</table> 
+				</article> 
+			</section> 
 		
-			<section class="odd">
-				<h2>Big buttons</h2>
+			<section class="odd"> 
+				<h2>Big buttons</h2> 
 				
-				<p>
-					If you wish to emphasize a specific action you can add the <code>.big</code> class to make a more prominent <em>call-to-action</em>
+				<p> 
+					If you wish to emphasize a specific action you can add the <code>.big</code> class to make a more prominent <em>call-to-action</em> 
 					button:
-				</p>
+				</p> 
 				
-				<article class="example">
-					<h3>Code:</h3>
-					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"big button"</span><span style='color:#ff8906; '>></span>Create Project<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span>
-					</pre>
+				<article class="example"> 
+					<h3>Code:</h3> 
+					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"big button"</span><span style='color:#ff8906; '>></span>Create Project<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>a</span><span style='color:#ff8906; '>></span> 
+					</pre> 
 					
-					<h3>Result:</h3>
-          <a href="javascript:void(false)" class="big button">Create Project</a>
-        </article>
+					<h3>Result:</h3> 
+					<a href="javascript:void(false)" class="big button">Create Project</a> 
+				</article> 
 				
-			</section>
+			</section> 
 		
-			<section class="even">
-				<h2>Browser compatibility</h2>
+			<section class="even"> 
+				<h2>Browser compatibility</h2> 
 				
-				<p>
+				<p> 
 					CSS3 Buttons works in all major browsers
-				</p>
+				</p> 
 				
-				<p class="notice">
+				<p class="notice"> 
 					<strong>Note:</strong> Some CSS3 features used in CSS3 Buttons is not supported in Internet Explorer browsers! (IE 8 and under)
-				</p>
-			</section>
+				</p> 
+			</section> 
 			
-			<section class="odd">
-				<h2>Installation</h2>
+			<section class="odd"> 
+				<h2>Installation</h2> 
 				
-				<ol>
-					<li>Drop <code>css3buttons.css</code> in your stylesheets folder</li>
-					<li>Drop <code>css3buttons_backgrounds.png</code> and <code>css3buttons_icons.png</code> in your images folder</li>
-					<li>Link to <code>css3buttons.css</code> in the head section of your HTML page (<em>see code example below</em>)</li>
-				</ol>
+				<ol> 
+					<li>Drop <code>css3buttons.css</code> in your stylesheets folder</li> 
+					<li>Drop <code>css3buttons_backgrounds.png</code> and <code>css3buttons_icons.png</code> in your images folder</li> 
+					<li>Link to <code>css3buttons.css</code> in the head section of your HTML page (<em>see code example below</em>)</li> 
+				</ol> 
 				
-				<article class="example">
-					<h3>Code:</h3>
-					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>link</span> rel<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"stylesheet"</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"stylesheets/css3buttons.css"</span> media<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"screen"</span><span style='color:#ff8906; '>></span>
-					</pre>
-				</article>
+				<article class="example"> 
+					<h3>Code:</h3> 
+					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>link</span> rel<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"stylesheet"</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"stylesheets/css3buttons.css"</span> media<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"screen"</span><span style='color:#ff8906; '>></span> 
+					</pre> 
+				</article> 
 				
-				<p class="notice">
+				<p class="notice"> 
 					CSS3 Buttons expects that some kind of CSS reset is in place in your project, otherwise the look might not be, as seen here
-				</p>
-			</section>
+				</p> 
+			</section> 
 		
-			<section class="even">
-				<h2>License</h2>
+			<section class="even"> 
+				<h2>License</h2> 
 				
-				<h3>The <a href="http://unlicense.org/">Unlicense</a>:</h3>
+				<h3>The <a href="http://unlicense.org/">Unlicense</a>:</h3> 
 				
-				<blockquote>
-					<p>
+				<blockquote> 
+					<p> 
 						This is free and unencumbered software released into the public domain.
-					</p>
-
-					<p>
+					</p> 
+ 
+					<p> 
 						Anyone is free to copy, modify, publish, use, compile, sell, or
 						distribute this software, either in source code form or as a compiled
 						binary, for any purpose, commercial or non-commercial, and by any
 						means.
-					</p>
-
-					<p>
+					</p> 
+ 
+					<p> 
 						In jurisdictions that recognize copyright laws, the author or authors
 						of this software dedicate any and all copyright interest in the
 						software to the public domain. We make this dedication for the benefit
@@ -387,9 +409,9 @@
 						successors. We intend this dedication to be an overt act of
 						relinquishment in perpetuity of all present and future rights to this
 						software under copyright law.
-					</p>
-
-					<p>
+					</p> 
+ 
+					<p> 
 						THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 						EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
 						MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
@@ -397,43 +419,57 @@
 						OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 						ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 						OTHER DEALINGS IN THE SOFTWARE.
-					</p>
-
-					<p>
+					</p> 
+ 
+					<p> 
 						For more information, please refer to &lt;<a href="http://unlicense.org/">http://unlicense.org/</a>&gt;
-					</p>
-				</blockquote>
-			</section>
+					</p> 
+				</blockquote> 
+			</section> 
 		
-			<section class="odd">
-				<h2>Shout-Outs</h2>
+			<section class="odd"> 
+				<h2>Shout-Outs</h2> 
 				
-				<ul>
-					<li>Thanks to <a href="http://github.com">GitHub</a> and <a href="http://davidwalsh.name/github-css">David Walsh</a> for inspiration!</li>
-					<li>Icons used in CSS3 Buttons are from the excellent <a href="http://somerandomdude.com/projects/iconic/">Iconic pack</a> by <a href="http://somerandomdude.com/">some random dude</a>!</li>
-				</ul>
-			</section>
+				<ul> 
+					<li>Thanks to <a href="http://github.com">GitHub</a> and <a href="http://davidwalsh.name/github-css">David Walsh</a> for inspiration!</li> 
+					<li>Icons used in CSS3 Buttons are from the excellent <a href="http://somerandomdude.com/projects/iconic/">Iconic pack</a> by <a href="http://somerandomdude.com/">some random dude</a>!</li> 
+				</ul> 
+			</section> 
 			
-			<section class="even">
-				<h2>Contact</h2>
+			<section class="even"> 
+				<h2>Contact</h2> 
 				
-				<h3>Found a Bug?</h3>
-				<p>
+				<h3>Found a Bug?</h3> 
+				<p> 
 					Please create a <a href="https://github.com/michenriksen/css3buttons/issues" target="_blank">ticket on GitHub</a> With a description of the problem, browser and operating system information and how to reproduce the problem.
-				</p>
+				</p> 
 				
-				<h3>Need Help?</h3>
-				<p>
+				<h3>Need Help?</h3> 
+				<p> 
 					You can send me a private message on <a href="http://github.com/michenriksen/" target="_blank">GitHub</a> and I'll do my best to help you.
-				</p>
+				</p> 
 			</section>
-		</div>
+		</div> 
 		
-		<footer>
-			<a href="http://github.com/michenriksen/css3buttons">CSS3 Buttons</a> is created by <a href="http://michaelhenriksen.dk" title="Website of Michael Henriksen">Michael Henriksen</a>
-		</footer>
-	</div>
+		<footer> 
+			<a href="http://css3buttons.michaelhenriksen.dk">CSS3 Buttons</a> is created by <a href="http://michaelhenriksen.dk" title="Website of Michael Henriksen">Michael Henriksen</a> &middot; <a href="http://twitter.com/michenriksen">Follow me on twitter</a> 
+		</footer> 
+	</div> 
 	
-	<a href="http://github.com/michenriksen" target="_blank" title="Michael Henriksen on GitHub"><img class="ribbon" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
-</body>
+	<a href="http://github.com/michenriksen/css3buttons" target="_blank" title="CSS3 Buttons on GitHub"><img class="ribbon" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a> 
+	
+	<script type="text/javascript"> 
+ 
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-10676126-3']);
+	  _gaq.push(['_trackPageview']);
+ 
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+ 
+	</script> 
+</body> 
 </html>
