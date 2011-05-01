@@ -3,8 +3,8 @@ button { margin-left: 0; margin-right: 0; *padding: 5px 5px 3px 5px; }
 a.button { -moz-user-select: none; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-user-select: none; -webkit-touch-callout: none;}
 button::-moz-focus-inner { border: 0; padding:0px; }
 a.button.primary, button.primary { font-weight: bold }
-a.button:focus, button:focus,
-a.button:hover, button:hover { color: #FFFFFF; border-color: #388AD4; text-decoration: none; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); background-position: 0 -40px; background-color: #2D7DC5; }
+button:focus,a.button:hover, 
+button:hover { color: #FFFFFF; border-color: #388AD4; text-decoration: none; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); background-position: 0 -40px; background-color: #2D7DC5; }
 a.button:active, button:active,
 a.button.active, button.active { background-position: 0 -81px; border-color: #347BBA; background-color: #0F5EA2; color: #FFFFFF; text-shadow: none; }
 a.button:active, button:active { top: 1px }
