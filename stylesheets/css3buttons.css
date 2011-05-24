@@ -8,11 +8,9 @@ button:hover { color: #FFFFFF; border-color: #388AD4; text-decoration: none; tex
 a.button:active, button:active,
 a.button.active, button.active { background-position: 0 -81px; border-color: #347BBA; background-color: #0F5EA2; color: #FFFFFF; text-shadow: none; }
 a.button:active, button:active { top: 1px }
-a.button.negative:focus, button.negative:focus,
 a.button.negative:hover, button.negative:hover { color: #FFFFFF; background-position: 0 -121px; background-color: #D84743; border-color: #911D1B; }
 a.button.negative:active, button.negative:active,
 a.button.negative.active, button.negative.active { background-position: 0 -161px; background-color: #A5211E; border-color: #911D1B; }
-a.button.positive:focus, button.positive:focus,
 a.button.positive:hover, button.positive:hover { background-position: 0 -280px; background-color: #96ED89; border-color: #45BF55; }
 a.button.positive:active, button.positive:active,
 a.button.positive.active, button.positive.active { background-position: 0 -320px; background-color: #45BF55; }
