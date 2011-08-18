@@ -371,8 +371,7 @@ http://github.com/necolas/css3-github-buttons
 }
 
 .button-group.minor-group .button:hover,
-.button-group.minor-group .button:focus,
-.button-group.minor-group .button:active {
+.button-group.minor-group .button:focus {
     background-color: #599bdc;
 }
 
