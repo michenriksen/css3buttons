@@ -37,6 +37,12 @@ hover-state will change to red
 If you have a button that triggers an action you want to encourage your users to do, you can give a button a `.positive` class and the hover-state will change to green
 
     <a href="#" class="positive button">Save the World</a>
+    
+## Disabled buttons ##
+
+You can disable a button by adding the <code>.disabled</code> class. Note that this will only affect the style. You need to disable the functionality of the button yourself.
+
+    <a href="#" class="disabled button">Don't click me</a>
 
 ## Grouped buttons ##
 
