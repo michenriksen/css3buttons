@@ -44,7 +44,7 @@ http://github.com/necolas/css3-github-buttons
     text-decoration: none;
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
     color: #fff;
-    background-color: #3C8DDE;
+    background-color: #3c8dde;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
     background-image: -moz-linear-gradient(#599bdc, #3072b3);
     background-image: -o-linear-gradient(#599bdc, #3072b3);
@@ -54,7 +54,7 @@ http://github.com/necolas/css3-github-buttons
 .button:active,
 .button.active {
     border-color: #2a65a0;
-    border-bottom-color: #3884CF;
+    border-bottom-color: #3884cd;
     background-color: #3072b3;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
     background-image: -moz-linear-gradient(#3072b3, #599bdc);
