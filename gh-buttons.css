@@ -1,26 +1,26 @@
 /* ------------------------------------------
 CSS3 GITHUB BUTTONS (Nicolas Gallagher)
-Licensed under Unlicense 
+Licensed under Unlicense
 http://github.com/necolas/css3-github-buttons
 ------------------------------------------ */
 
 
 /* ------------------------------------------------------------------------------------------------------------- BUTTON */
 
-.button { 
-    position: relative; 
-    overflow: visible; 
-    display: inline-block; 
-    padding: 0.5em 1em; 
-    border: 1px solid #d4d4d4; 
+.button {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid #d4d4d4;
     margin: 0;
-    text-decoration: none; 
-    text-shadow: 1px 1px 0 #fff; 
-    font:11px/normal sans-serif; 
-    color: #333; 
-    white-space: nowrap; 
-    cursor: pointer; 
-    outline: none; 
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    font:11px/normal sans-serif;
+    color: #333;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
     background-color: #ececec;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
     background-image: -moz-linear-gradient(#f4f4f4, #ececec);
@@ -28,14 +28,14 @@ http://github.com/necolas/css3-github-buttons
     background-image: linear-gradient(#f4f4f4, #ececec);
     -webkit-background-clip: padding;
     -moz-background-clip: padding;
-    -o-background-clip: padding-box; 
+    -o-background-clip: padding-box;
     /*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
-    -webkit-border-radius: 0.2em; 
-    -moz-border-radius: 0.2em; 
-    border-radius: 0.2em; 
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em;
     /* IE hacks */
-    zoom: 1; 
-    *display: inline; 
+    zoom: 1;
+    *display: inline;
 }
 
 .button:hover,
@@ -44,9 +44,9 @@ http://github.com/necolas/css3-github-buttons
 .button.active {
     border-color: #3072b3;
     border-bottom-color: #2a65a0;
-    text-decoration: none; 
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
-    color: #fff; 
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    color: #fff;
     background-color: #3C8DDE;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
     background-image: -moz-linear-gradient(#599bdc, #3072b3);
@@ -75,12 +75,12 @@ http://github.com/necolas/css3-github-buttons
 
 .button.icon:before {
     content: "";
-    position: relative; 
-    top: 1px; 
+    position: relative;
+    top: 1px;
     float:left;
-    width: 12px; 
-    height: 12px; 
-    margin: 0 0.75em 0 -0.25em; 
+    width: 12px;
+    height: 12px;
+    margin: 0 0.75em 0 -0.25em;
     background: url(gh-icons.png) 0 99px no-repeat;
 }
 
@@ -256,10 +256,10 @@ http://github.com/necolas/css3-github-buttons
 
 .button.danger:hover,
 .button.danger:focus,
-.button.danger:active {     
+.button.danger:active {
     border-color: #b53f3a;
     border-bottom-color: #a0302a;
-    color: #fff; 
+    color: #fff;
     background-color: #dc5f59;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
     background-image: -moz-linear-gradient(#dc5f59, #b33630);
@@ -268,7 +268,7 @@ http://github.com/necolas/css3-github-buttons
 }
 
 .button.danger:active,
-.button.danger.active {   
+.button.danger.active {
     border-color: #a0302a;
     border-bottom-color: #bf4843;
     background-color: #b33630;
@@ -281,9 +281,9 @@ http://github.com/necolas/css3-github-buttons
 /* ............................................................................................................. Pill */
 
 .button.pill {
-    -webkit-border-radius: 50em; 
-    -moz-border-radius: 50em; 
-    border-radius: 50em; 
+    -webkit-border-radius: 50em;
+    -moz-border-radius: 50em;
+    border-radius: 50em;
 }
 
 /* ............................................................................................................. Disable */
@@ -295,10 +295,12 @@ http://github.com/necolas/css3-github-buttons
 /* ............................................................................................................. Big */
 
 .button.big {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
-.button.big.icon:before { top: 0; }
+.button.big.icon:before {
+    top: 0;
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------- BUTTON GROUPS */
@@ -311,8 +313,8 @@ http://github.com/necolas/css3-github-buttons
     padding: 0;
     margin: 0;
     /* IE hacks */
-    zoom: 1; 
-    *display: inline; 
+    zoom: 1;
+    *display: inline;
 }
 
 .button + .button,
@@ -330,41 +332,41 @@ http://github.com/necolas/css3-github-buttons
 
 .button-group .button {
     float: left;
-    margin-left: -1px; 
+    margin-left: -1px;
 }
 
 .button-group > .button:not(:first-child):not(:last-child),
-.button-group li:not(:first-child):not(:last-child) .button { 
-    -webkit-border-radius: 0; 
-    -moz-border-radius: 0; 
-    border-radius: 0; 
+.button-group li:not(:first-child):not(:last-child) .button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 .button-group > .button:first-child,
-.button-group li:first-child .button { 
-    margin-left: 0; 
-    -webkit-border-top-right-radius: 0; 
-    -webkit-border-bottom-right-radius: 0; 
-    -moz-border-radius-topright: 0; 
-    -moz-border-radius-bottomright: 0; 
-    border-top-right-radius: 0; 
-    border-bottom-right-radius: 0; 
+.button-group li:first-child .button {
+    margin-left: 0;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .button-group > .button:last-child,
-.button-group li:last-child > .button { 
-    -webkit-border-top-left-radius: 0; 
-    -webkit-border-bottom-left-radius: 0; 
-    -moz-border-radius-topleft: 0; 
-    -moz-border-radius-bottomleft: 0; 
-    border-top-left-radius: 0; 
-    border-bottom-left-radius: 0; 
+.button-group li:last-child > .button {
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 /* ............................................................................................................. Minor */
 
 .button-group.minor-group .button {
-    border: 1px solid #d4d4d4; 
+    border: 1px solid #d4d4d4;
     text-shadow: none;
     background-image: none;
     background-color: #fff;
