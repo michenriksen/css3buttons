@@ -24,14 +24,11 @@ http://github.com/necolas/css3-github-buttons
     background-color: #ececec;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
     background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -ms-linear-gradient(#f4f4f4, #ececec);
     background-image: -o-linear-gradient(#f4f4f4, #ececec);
     background-image: linear-gradient(#f4f4f4, #ececec);
-    -webkit-background-clip: padding;
-    -moz-background-clip: padding;
-    -o-background-clip: padding-box;
-    /*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
-    -webkit-border-radius: 0.2em;
-    -moz-border-radius: 0.2em;
+    -moz-background-clip: padding; /* for Firefox 3.6 */
+    background-clip: padding-box;
     border-radius: 0.2em;
     /* IE hacks */
     zoom: 1;
@@ -61,6 +58,7 @@ http://github.com/necolas/css3-github-buttons
     background-color: #3072b3;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
     background-image: -moz-linear-gradient(#3072b3, #599bdc);
+    background-image: -ms-linear-gradient(#3072b3, #599bdc);
     background-image: -o-linear-gradient(#3072b3, #599bdc);
     background-image: linear-gradient(#3072b3, #599bdc);
 }
@@ -263,6 +261,7 @@ http://github.com/necolas/css3-github-buttons
     background-color: #dc5f59;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
     background-image: -moz-linear-gradient(#dc5f59, #b33630);
+    background-image: -ms-linear-gradient(#dc5f59, #b33630);
     background-image: -o-linear-gradient(#dc5f59, #b33630);
     background-image: linear-gradient(#dc5f59, #b33630);
 }
@@ -274,6 +273,7 @@ http://github.com/necolas/css3-github-buttons
     background-color: #b33630;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b33630), to(#dc5f59));
     background-image: -moz-linear-gradient(#b33630, #dc5f59);
+    background-image: -ms-linear-gradient(#b33630, #dc5f59);
     background-image: -o-linear-gradient(#b33630, #dc5f59);
     background-image: linear-gradient(#b33630, #dc5f59);
 }
@@ -281,8 +281,6 @@ http://github.com/necolas/css3-github-buttons
 /* ............................................................................................................. Pill */
 
 .button.pill {
-    -webkit-border-radius: 50em;
-    -moz-border-radius: 50em;
     border-radius: 50em;
 }
 
@@ -337,28 +335,18 @@ http://github.com/necolas/css3-github-buttons
 
 .button-group > .button:not(:first-child):not(:last-child),
 .button-group li:not(:first-child):not(:last-child) .button {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
     border-radius: 0;
 }
 
 .button-group > .button:first-child,
 .button-group li:first-child .button {
     margin-left: 0;
-    -webkit-border-top-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-    -moz-border-radius-topright: 0;
-    -moz-border-radius-bottomright: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 .button-group > .button:last-child,
 .button-group li:last-child > .button {
-    -webkit-border-top-left-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-    -moz-border-radius-topleft: 0;
-    -moz-border-radius-bottomleft: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
