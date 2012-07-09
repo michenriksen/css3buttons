@@ -183,6 +183,26 @@
 			</section> 
 		
 			<section class="even"> 
+				<h2>Disabled buttons</h2> 
+				
+				<p> 
+					If you have a button that you want to be <em>disabled</em>, give the button the class <code>.disabled</code>. This will grey out the button as well as hover and active states. For disabled buttons, it may be better to use a <code>span</code> element rather than an anchor tag in order to fully disable linking. The <code>.disabled</code> class will disable all buttons including <code>.pill</code>, <code>.primary</code>, <code>.negative</code>, and <code>.positive</code> buttons.
+				</p> 
+				
+				<article class="example"> 
+					<h3>Code:</h3> 
+					<pre class="code"><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>span</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"disabled button"</span><span style='color:#ff8906; '>></span>Disabled<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>span</span><span style='color:#ff8906; '>></span> 
+					</pre> 
+					
+					<h3>Result:</h3> 
+					<div class="result"> 
+						<span class="disabled button">Disabled</span> 
+					</div> 
+				</article> 
+					
+			</section>
+		
+			<section class="odd"> 
 				<h2>Buttons with icons</h2> 
 				
 				<p> 
@@ -207,133 +227,164 @@
 							<tr> 
 								<th>Class</th> 
 								<th>Example</th> 
+								<th>Disabled</th> 
 							</tr> 
 						</thead> 
 						<tr> 
 			              <td><code>.book</code></td> 
 			              <td><a href="javascript:void(false)" class="button"><span class="book icon"></span>View Log</a></td> 
+						  <td><span class="disabled button"><span class="book icon"></span>View Log</span></td> 
 			            </tr> 
 						<tr> 
 							<td><code>.calendar</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="calendar icon"></span>Add to Calendar</a></td> 
+							<td><span class="disabled button"><span class="calendar icon"></span>Add to Calendar</span></td> 
 						</tr> 
 						<tr> 
 							<td><code>.chat</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="chat icon"></span>Start Chat</a></td> 
+							<td><span class="disabled button"><span class="chat icon"></span>Start Chat</span></td> 
 						</tr> 
 						<tr> 
 							<td><code>.check</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="check icon"></span>Approve Registration</a></td> 
+							<td><span class="disabled button"><span class="check icon"></span>Approve Registration</span></td> 
 						</tr> 
 						<tr> 
 			              <td><code>.clock</code></td> 
 			              <td><a href="javascript:void(false)" class="button"><span class="clock icon"></span>Register Work Time</a></td> 
+						  <td><span class="disabled button"><span class="clock icon"></span>Register Work Time</span></td> 
 			            </tr> 
 						<tr> 
 							<td><code>.cog</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="cog icon"></span>Settings</a></td> 
+							<td><span class="disabled button"><span class="cog icon"></span>Settings</span></td> 
 						</tr> 
 						<tr> 
 							<td><code>.comment</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="comment icon"></span>Add Comment</a></td> 
+							<td><span class="disabled button"><span class="comment icon"></span>Add Comment</span></td> 
 						</tr> 
 						<tr> 
 							<td><code>.cross</code></td> 
 							<td><a href="javascript:void(false)" class="negative button"><span class="cross icon"></span>Remove Item</a></td> 
+							<td><span class="disabled negative button"><span class="cross icon"></span>Remove Item</span></td> 
 						</tr> 
 						<tr> 
 			              <td><code>.downarrow</code></td> 
 			              <td><a href="javascript:void(false)" class="button"><span class="downarrow icon"></span>Move Down</a></td> 
+						  <td><span class="disabled button"><span class="downarrow icon"></span>Move Down</span></td> 
 			            </tr> 
 						<tr> 
 			              <td><code>.fork</code></td> 
 			              <td><a href="javascript:void(false)" class="button"><span class="fork icon"></span>Create Branch</a></td> 
+						  <td><span class="disabled button"><span class="fork icon"></span>Create Branch</span></td> 
 			            </tr> 
 						<tr> 
 							<td><code>.heart</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="heart icon"></span>Add to Favorites</a></td> 
+							<td><span class="disabled button"><span class="heart icon"></span>Add to Favorites</span></td> 
 						</tr> 
 						<tr> 
 							<td><code>.home</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="home icon"></span>Back to Frontpage</a></td> 
+							<td><span class="disabled button"><span class="home icon"></span>Back to Frontpage</span></td> 
 						</tr> 
 						<tr> 
 							<td><code>.key</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="key icon"></span>Password Protect</a></td> 
+							<td><span class="disabled button"><span class="key icon"></span>Password Protect</span></td> 
 						</tr> 
 						<tr> 
 			              <td><code>.leftarrow</code></td> 
 			              <td><a href="javascript:void(false)" class="button"><span class="leftarrow icon"></span>Move Left</a></td> 
+						  <td><span class="disabled button"><span class="leftarrow icon"></span>Move Left</span></td> 
 			            </tr> 
 			            <tr> 
 			              <td><code>.lock</code></td> 
 			              <td><a href="javascript:void(false)" class="button"><span class="lock icon"></span>Lock Article</a></td> 
+						  <td><span class="disabled button"><span class="lock icon"></span>Lock Article</span></td> 
 			            </tr> 
 						<tr> 
 							<td><code>.loop</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="loop icon"></span>Resend Message</a></td> 
+							<td><span class="disabled button"><span class="loop icon"></span>Resend Message</span></td> 
 						</tr> 
 						<tr> 
 							<td><code>.magnifier</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="magnifier icon"></span>Search</a></td> 
+							<td><span class="disabled button"><span class="magnifier icon"></span>Search</span></td> 
 						</tr> 
 						<tr> 
 							<td><code>.mail</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="mail icon"></span>Send Newsletter</a></td> 
+							<td><span class="disabled button"><span class="mail icon"></span>Send Newsletter</span></td> 
 						</tr> 
 						<tr> 
 			              <td><code>.move</code></td> 
 			              <td><a href="javascript:void(false)" class="button"><span class="move icon"></span>Move</a></td> 
+						  <td><span class="disabled button"><span class="move icon"></span>Move</span></td> 
 			            </tr> 
 						<tr> 
 							<td><code>.pen</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="pen icon"></span>Edit Post</a></td> 
+							<td><span class="disabled button"><span class="pen icon"></span>Edit Post</span></td> 
 						</tr> 
 						<tr> 
 			              <td><code>.pin</code></td> 
 			              <td><a href="javascript:void(false)" class="button"><span class="pin icon"></span>Pin to Map</a></td> 
+						  <td><span class="disabled button"><span class="pin icon"></span>Pin to Map</span></td> 
 			            </tr> 
 						<tr> 
 							<td><code>.plus</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="plus icon"></span>Add Post</a></td> 
+							<td><span class="disabled button"><span class="plus icon"></span>Add Post</span></td> 
 						</tr> 
 						<tr> 
 							<td><code>.reload</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="reload icon"></span>Reload Page</a></td> 
+							<td><span class="disabled button"><span class="reload icon"></span>Reload Page</span></td> 
 						</tr> 
 						<tr> 
 			              <td><code>.rightarrow</code></td> 
 			              <td><a href="javascript:void(false)" class="button"><span class="rightarrow icon"></span>Move Right</a></td> 
+						  <td><span class="disabled button"><span class="rightarrow icon"></span>Move Right</span></td> 
 			            </tr> 
 						<tr> 
 							<td><code>.rss</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="rss icon"></span>Subscribe to RSS Feed</a></td> 
+							<td><span class="disabled button"><span class="rss icon"></span>Subscribe to RSS Feed</span></td> 
 						</tr> 
 						<tr> 
 							<td><code>.tag</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="tag icon"></span>Add Tag</a></td> 
+							<td><span class="disabled button"><span class="tag icon"></span>Add Tag</span></td> 
 						</tr> 
 						<tr> 
 							<td><code>.trash</code></td> 
 							<td><a href="javascript:void(false)" class="negative button"><span class="trash icon"></span>Delete Post</a></td> 
+							<td><span class="disabled negative button"><span class="trash icon"></span>Delete Post</span></td> 
 						</tr> 
 						<tr> 
 			              <td><code>.unlock</code></td> 
 			              <td><a href="javascript:void(false)" class="button"><span class="unlock icon"></span>Unlock Article</a></td> 
+						  <td><span class="disabled button"><span class="unlock icon"></span>Unlock Article</span></td> 
 			            </tr> 
 			            <tr> 
 			              <td><code>.uparrow</code></td> 
 			              <td><a href="javascript:void(false)" class="button"><span class="uparrow icon"></span>Move Up</a></td> 
+						  <td><span class="disabled button"><span class="uparrow icon"></span>Move Up</span></td> 
 			            </tr> 
 						<tr> 
 							<td><code>.user</code></td> 
 							<td><a href="javascript:void(false)" class="button"><span class="user icon"></span>Add New User</a></td> 
+							<td><span class="disabled button"><span class="user icon"></span>Add New User</span></td> 
 						</tr> 
 					</table> 
 				</article> 
 			</section> 
 		
-			<section class="odd"> 
+			<section class="even"> 
 				<h2>Big buttons</h2> 
 				
 				<p> 
@@ -352,7 +403,7 @@
 				
 			</section> 
 		
-			<section class="even"> 
+			<section class="odd"> 
 				<h2>Browser compatibility</h2> 
 				
 				<p> 
@@ -364,7 +415,7 @@
 				</p> 
 			</section> 
 			
-			<section class="odd"> 
+			<section class="even"> 
 				<h2>Installation</h2> 
 				
 				<ol> 
@@ -384,7 +435,7 @@
 				</p> 
 			</section> 
 		
-			<section class="even"> 
+			<section class="odd"> 
 				<h2>License</h2> 
 				
 				<h3>The <a href="http://unlicense.org/">Unlicense</a>:</h3> 
@@ -427,7 +478,7 @@
 				</blockquote> 
 			</section> 
 		
-			<section class="odd"> 
+			<section class="even"> 
 				<h2>Shout-Outs</h2> 
 				
 				<ul> 
@@ -436,7 +487,7 @@
 				</ul> 
 			</section> 
 			
-			<section class="even"> 
+			<section class="odd"> 
 				<h2>Contact</h2> 
 				
 				<h3>Found a Bug?</h3> 
