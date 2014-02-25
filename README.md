@@ -1,3 +1,15 @@
+--------------------
+--------------------
+--------------------
+
+#### Not Maintained
+
+This project is no longer maintained. Consider using [Twitter Bootstrap](http://getbootstrap.com/) instead.
+
+--------------------
+--------------------
+--------------------
+
 # CSS3 Buttons #
 
 ## What is this? ##
