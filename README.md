@@ -20,21 +20,29 @@ This project is no longer maintained. Consider using [Twitter Bootstrap](http://
 
 To create a button, the only thing you have to do is this:
 
+```html
     <a href="#" class="button">This is a Button</a>
+```
 
 You can also use the button tag:
 
+```html
     <button class="button">This is a Button</button>
+```
 
 If you prefer a pill-like button with more rounded corners, you can add a `.pill` class to the button
 
+```html
     <a href="#" class="pill button">This is a Pill Button</a>
+```
 
 Sometimes when you have multiple buttons, it's a good thing to highlight the button with the primary action 
 in order to give the user a visual clue of what action to take if in doubt. This can be accomplished by adding 
 a `.primary` class to the button
 
+```html
     <a href="#" class="primary button">Publish Post</a> or <a href="#" class="button">Save as Draft</a>
+```
 
 ## Buttons with negative actions ##
 
@@ -42,35 +50,46 @@ If you have a button that triggers a negative action, like deleting data, it's g
 by styling the button differently than the normal buttons. Give a button the class `.negative` and the 
 hover-state will change to red
 
+```html
     <a href="#" class="negative button">Divide by Zero</a>
+```
 
 ## Buttons with positive actions ##
 
 If you have a button that triggers an action you want to encourage your users to do, you can give a button a `.positive` class and the hover-state will change to green
 
+```html
     <a href="#" class="positive button">Save the World</a>
+```
 
 ## Grouped buttons ##
 
 You can create grouped buttons that are linked together, like seen at Gmail and other places, 
 by using the `.left`, `.middle` and `.right` classes:
 
+```html
     <a href="#" class="left primary button">Archive</a>
     <a href="#" class="middle button">Report Spam</a>
     <a href="#" class="right negative button">Delete</a>
+```
 
 You can also add the pill class to grouped buttons if preferred:
 
+```html
     <a href="#" class="left primary pill button">Archive</a>
     <a href="#" class="middle pill button">Report Spam</a>
     <a href="#" class="right negative pill button">Delete</a>
+```
 
 ## Buttons with icons ##
 
 CSS3 Buttons supports a wide range of icons that can easily be added to any button by adding a span tag inside the anchor 
 tag with the class of `.icon` and any one of the provided icon classes:
 )
+
+```html
     <a href="#" class="button"><span class="magnifier icon"></span>Search</a>
+```
 
 Here is a list of all the supported icon classes:
 
@@ -109,7 +128,9 @@ Here is a list of all the supported icon classes:
 
 If you wish to emphasize a specific action you can add the `.big` class to make a more prominent *call-to-action* button:
 
+```html
     <a href="#" class="big button">Create Project</a>
+```
 
 ## Browser compatibility ##
 
