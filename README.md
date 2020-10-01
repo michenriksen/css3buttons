@@ -56,6 +56,7 @@ You can create grouped buttons that are linked together, like seen at Gmail and 
 by using the `.left`, `.middle` and `.right` classes:
 
     <a href="#" class="left primary button">Archive</a>
+    <a href="#" class="left teal button">Archive</a>   // a new Brilliant Color had to Be added
     <a href="#" class="middle button">Report Spam</a>
     <a href="#" class="right negative button">Delete</a>
 
